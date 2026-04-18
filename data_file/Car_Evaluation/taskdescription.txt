@@ -1,1 +1,0 @@
-Predict the acceptability of a car based on a set of easily understood and interpretable features related to cost, capacity, safety, and functionality.
