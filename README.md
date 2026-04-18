@@ -5,6 +5,7 @@ This repository contains the implementation of **MALMAS** (Memory-Augmented LLM-
 ## Overview
 
 MALMAS addresses the challenge of automated feature generation by:
+
 - Employing **six specialized agents**, each focusing on distinct feature transformation strategies
 - Introducing a **Router Agent** that dynamically selects active agent subsets per iteration
 - Implementing a **multi-level memory system** (procedural, feedback, conceptual) to guide feature generation across rounds
@@ -58,17 +59,6 @@ MALMAS-63DB/
 
 - Python 3.8+
 - OpenAI API key or compatible LLM service (DeepSeek, Qwen, etc.)
-
-### Setup
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd MALMAS-63DB
-
-# Install dependencies
-pip install -r requirements.txt
-```
 
 ### LLM Configuration
 
@@ -139,6 +129,7 @@ python server.py
 Then open `http://localhost:8000` in your browser.
 
 **Features:**
+
 - Upload CSV file directly
 - Auto-detect columns and target column
 - Configure experiment parameters (task type, model, metric, rounds)
@@ -170,6 +161,7 @@ await MALMAS_random_experiments_async(
 The repository includes 21 tabular datasets:
 
 **Classification (15)**:
+
 - Adult Census Income, Bank Marketing, Banknote Authentication
 - Breast Cancer Wisconsin, Car Evaluation, Credit Approval
 - Heart Disease, Jungle Chess, Pima Indians Diabetes
@@ -177,11 +169,13 @@ The repository includes 21 tabular datasets:
 - Wine Quality, Balance Scale
 
 **Regression (6)**:
+
 - Airfoil Self Noise, Bike Sharing, Crab Age Prediction
 - Energy Efficiency (Y1), House Price, Insurance
 - Medical Cost Personal
 
 Each dataset includes:
+
 - Data loader class (`{Dataset}.py`)
 - Metadata description (`parsed_description.json`, `enriched_description.json`)
 - Task description (`taskdescription.txt`)
@@ -219,20 +213,21 @@ If you use this code in your research, please cite:
 ### Memory System (`main_demo/memory.py`)
 
 Each agent maintains three-level memory:
+
 - **Procedural**: Successful feature transformations
 - **Feedback**: Feature effectiveness scores
 - **Conceptual**: LLM-generated rules from effective patterns
 
 ### Six Specialized Agents
 
-| Agent | Focus |
-|-------|-------|
-| UnaryFeatureAgent | Single-column transformations |
-| CrossCompositionalAgent | Cross-column interactions |
-| AggregationConstructAgent | Group-based aggregations |
-| TemporalFeatureAgent | Time-based features |
-| LocalTransformAgent | Local transformations |
-| LocalPatternAgent | Distributional patterns |
+| Agent                     | Focus                         |
+| ------------------------- | ----------------------------- |
+| UnaryFeatureAgent         | Single-column transformations |
+| CrossCompositionalAgent   | Cross-column interactions     |
+| AggregationConstructAgent | Group-based aggregations      |
+| TemporalFeatureAgent      | Time-based features           |
+| LocalTransformAgent       | Local transformations         |
+| LocalPatternAgent         | Distributional patterns       |
 
 ## Troubleshooting
 
