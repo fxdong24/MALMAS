@@ -201,7 +201,7 @@ If you use this code in your research, please cite:
 
 ```bibtex
 @inproceedings{
-anonymous2026memoryaugmented,
+anonymous2026memory,
 title={Memory-Augmented {LLM}-based Multi-Agent System for Automated Feature Generation on Tabular Data},
 author={Anonymous},
 booktitle={The 64th Annual Meeting of the Association for Computational Linguistics},
