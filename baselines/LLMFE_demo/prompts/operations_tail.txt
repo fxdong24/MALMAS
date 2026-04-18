@@ -1,0 +1,7 @@
+Please generate as many new features strictly using the operations mentioned in <Operators>, the information from the task, feature description, examples, and your own understanding of the dataset and it's domain.
+Enhance the model performance by dropping irrelevant, redundant or less informative features, that do not contribute toward the <Task>.
+
+First, describe your new feature transformation and main steps in one sentence. The description must be inside the docstring.
+Next, implement it in Python as a function that matches the specification.
+
+Avoid providing any additional description.

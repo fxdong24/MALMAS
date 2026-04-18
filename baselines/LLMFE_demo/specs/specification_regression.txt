@@ -1,0 +1,82 @@
+"""
+[PREFIX]
+
+###
+<Task>
+
+###
+<Features>
+[FEATURES]
+
+###
+<Examples>
+[EXAMPLES]
+[SUFFIX]
+"""
+
+@evaluate.run
+def evaluate(data: dict):
+    """ Evaluate the feature transformations on data observations."""
+
+    from sklearn import preprocessing
+    from sklearn.model_selection import StratifiedKFold, KFold
+    from sklearn.metrics import mean_squared_error
+    from preprocessing import preprocess_datasets
+    import xgboost as xgb
+    import torch
+    import numpy as np
+
+    # Load data observations
+    label_encoder = preprocessing.LabelEncoder()
+    inputs, outputs, is_cat, is_regression = data['inputs'], data['outputs'], data['is_cat'], data['is_regression']
+    X = modify_features(inputs)
+    y = outputs
+
+    for col in X.select_dtypes(include=['object', 'category','string']).columns:
+        X[col] = label_encoder.fit_transform(X[col])
+
+    # Choose cross-validation strategy
+    kf = KFold(n_splits=4, shuffle=True, random_state=42)
+
+    scores = []
+
+    # 4-Fold Cross-Validation
+    for train_idx, test_idx in kf.split(X, y):
+        X_train, X_test = X.iloc[train_idx], X.iloc[test_idx]
+        y_train, y_test = y[train_idx], y[test_idx]
+
+        X_train_new, X_test_new = preprocess_datasets(X_train, X_test, None)
+        
+        # Convert to tensors
+        X_train = torch.tensor(X_train_new.to_numpy())
+        X_test = torch.tensor(X_test_new.to_numpy())
+        y_train = torch.tensor(y_train)
+        y_test = torch.tensor(y_test)
+        
+        # Load model
+        model = xgb.XGBRegressor(random_state=42)
+
+        model.fit(X_train, y_train)
+        
+        y_pred = model.predict(X_test)
+        score = -1*np.sqrt(mean_squared_error(y_test, y_pred, ))
+        scores.append(score)
+
+    # Calculate average score
+    avg_score = np.mean(scores)
+
+    return avg_score, inputs, outputs
+
+
+@equation.evolve
+def modify_features(df_input) -> pd.DataFrame:
+    """
+    Thought 1: Here, a simple thought is derived based on the features generated this time to prepare for the subsequent feature generation.
+    New Feature 1:The description of the newly generated features, named "new_feature_name_1" , which is based on features "original_name_1"and "original_name_1". 
+    """
+    df_output = df_input.copy()
+    
+    # next line is a code ,generating new feature named "["new_feature_name_1"] " by Thought1.
+    # df_output["new_feature_name_1"] = df_output ["original_name_1"] * df_output["original_name_2"]
+    
+    return df_output
