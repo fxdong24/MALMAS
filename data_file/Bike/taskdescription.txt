@@ -1,0 +1,1 @@
+Estimate the count of total rental bikes from given information.

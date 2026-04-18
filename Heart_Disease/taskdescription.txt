@@ -1,0 +1,1 @@
+Does the coronary angiography of this patient show a heart disease? yes or no?

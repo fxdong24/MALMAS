@@ -1,0 +1,110 @@
+{
+  "buying": {
+    "description": "The buying price of the car",
+    "type": "categorical",
+    "values": [
+      "vhigh",
+      "low",
+      "high",
+      "med"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      200,
+      178,
+      178,
+      169
+    ],
+    "target_bin_avg": null
+  },
+  "maint": {
+    "description": "The maintenance cost of the car",
+    "type": "categorical",
+    "values": [
+      "vhigh",
+      "med",
+      "low",
+      "high"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      192,
+      187,
+      182,
+      164
+    ],
+    "target_bin_avg": null
+  },
+  "doors": {
+    "description": "The number of doors in the car",
+    "type": "categorical",
+    "values": [
+      "3",
+      "5more",
+      "4",
+      "2"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      188,
+      181,
+      181,
+      175
+    ],
+    "target_bin_avg": null
+  },
+  "persons": {
+    "description": "The capacity of persons to carry",
+    "type": "categorical",
+    "values": [
+      "more",
+      "2",
+      "4"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      251,
+      242,
+      232
+    ],
+    "target_bin_avg": null
+  },
+  "lug_boot": {
+    "description": "The size of the luggage boot",
+    "type": "categorical",
+    "values": [
+      "small",
+      "med",
+      "big"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      249,
+      245,
+      231
+    ],
+    "target_bin_avg": null
+  },
+  "safety": {
+    "description": "The safety level of the car",
+    "type": "categorical",
+    "values": [
+      "med",
+      "low",
+      "high"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      254,
+      248,
+      223
+    ],
+    "target_bin_avg": null
+  }
+}

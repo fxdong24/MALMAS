@@ -1,0 +1,350 @@
+{
+  "age": {
+    "description": "the age of an individual",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 24.0,
+    "max": 86.0,
+    "mean": 39.61538461538461,
+    "std": 10.000499285398085,
+    "skewness": 0.9955583491398929,
+    "kurtosis": 1.4765561848843562,
+    "outlier_ratio_3sigma": 0.01417004048582996,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "job": {
+    "description": "type of job",
+    "type": "categorical",
+    "values": [
+      "admin",
+      "blue-collar",
+      "technician",
+      "services",
+      "management",
+      "retired",
+      "entrepreneur",
+      "unemployed",
+      "self-employed",
+      "housemaid",
+      "student",
+      "unknown"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 12,
+    "value_frequencies": [
+      136,
+      102,
+      89,
+      48,
+      29,
+      22,
+      18,
+      16,
+      13,
+      12,
+      6,
+      3
+    ],
+    "target_bin_avg": null
+  },
+  "marital": {
+    "description": "marital status (divorced includes widowed)",
+    "type": "categorical",
+    "values": [
+      "married",
+      "single",
+      "divorced",
+      "unknown"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      298,
+      130,
+      65,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "education": {
+    "description": "level of education",
+    "type": "categorical",
+    "values": [
+      "basic",
+      "university",
+      "high",
+      "professional",
+      "unknown"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      153,
+      140,
+      120,
+      65,
+      16
+    ],
+    "target_bin_avg": null
+  },
+  "default": {
+    "description": "has credit in default",
+    "type": "categorical",
+    "values": [
+      "no",
+      "unknown"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      391,
+      103
+    ],
+    "target_bin_avg": null
+  },
+  "housing": {
+    "description": "has housing loan",
+    "type": "categorical",
+    "values": [
+      "yes",
+      "no",
+      "unknown"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      272,
+      212,
+      10
+    ],
+    "target_bin_avg": null
+  },
+  "loan": {
+    "description": "has personal loan",
+    "type": "categorical",
+    "values": [
+      "no",
+      "yes",
+      "unknown"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      406,
+      78,
+      10
+    ],
+    "target_bin_avg": null
+  },
+  "contact": {
+    "description": "contact communication type",
+    "type": "categorical",
+    "values": [
+      "cellular",
+      "telephone"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      316,
+      178
+    ],
+    "target_bin_avg": null
+  },
+  "month": {
+    "description": "last contact month of year",
+    "type": "categorical",
+    "values": [
+      "may",
+      "jul",
+      "aug",
+      "jun",
+      "nov",
+      "apr",
+      "oct",
+      "mar",
+      "sep",
+      "dec"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 10,
+    "value_frequencies": [
+      147,
+      94,
+      79,
+      66,
+      62,
+      25,
+      11,
+      5,
+      4,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "day_of_week": {
+    "description": "last contact day of the week",
+    "type": "categorical",
+    "values": [
+      "tue",
+      "thu",
+      "wed",
+      "mon",
+      "fri"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      104,
+      102,
+      100,
+      99,
+      89
+    ],
+    "target_bin_avg": null
+  },
+  "duration": {
+    "description": "last contact duration in seconds (should not be used for realistic modeling)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 2.0,
+    "max": 2420.0,
+    "mean": 266.8218623481781,
+    "std": 274.7278731910661,
+    "skewness": 2.8809685228041975,
+    "kurtosis": 12.517611118644986,
+    "outlier_ratio_3sigma": 0.02834008097165992,
+    "num_modes_estimated": 3,
+    "target_bin_avg": null
+  },
+  "campaign": {
+    "description": "number of contacts performed during this campaign for this client",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1.0,
+    "max": 28.0,
+    "mean": 2.5040485829959516,
+    "std": 2.7629436865559027,
+    "skewness": 4.694840407059856,
+    "kurtosis": 32.71528934476264,
+    "outlier_ratio_3sigma": 0.024291497975708502,
+    "num_modes_estimated": 3,
+    "target_bin_avg": null
+  },
+  "pdays": {
+    "description": "number of days since last contact from previous campaign (999 means not previously contacted)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1.0,
+    "max": 999.0,
+    "mean": 962.8502024291498,
+    "std": 186.08769615207814,
+    "skewness": -4.9632056036200565,
+    "kurtosis": 22.725998040671538,
+    "outlier_ratio_3sigma": 0.03643724696356275,
+    "num_modes_estimated": 1,
+    "target_bin_avg": null
+  },
+  "previous": {
+    "description": "number of contacts before this campaign for this client",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 4.0,
+    "mean": 0.15991902834008098,
+    "std": 0.5022593916223844,
+    "skewness": 4.7148024505386275,
+    "kurtosis": 28.793514213322556,
+    "outlier_ratio_3sigma": 0.01417004048582996,
+    "num_modes_estimated": 3,
+    "target_bin_avg": null
+  },
+  "poutcome": {
+    "description": "outcome of the previous marketing campaign",
+    "type": "categorical",
+    "values": [
+      "unknown",
+      "failure",
+      "success"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      431,
+      45,
+      18
+    ],
+    "target_bin_avg": null
+  },
+  "emp_var_rate": {
+    "description": "employment variation rate - quarterly indicator",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": -3.4,
+    "max": 1.4,
+    "mean": 0.14412955465587043,
+    "std": 1.545613419721152,
+    "skewness": -0.8340268869804446,
+    "kurtosis": -0.8412374888106187,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "cons_price_idx": {
+    "description": "consumer price index - monthly indicator",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 92.201,
+    "max": 94.767,
+    "mean": 93.58775708502024,
+    "std": 0.5947934934908017,
+    "skewness": -0.34532655606105855,
+    "kurtosis": -0.6026577687733132,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 3,
+    "target_bin_avg": null
+  },
+  "cons_conf_idx": {
+    "description": "consumer confidence index - monthly indicator",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": -50.8,
+    "max": -26.9,
+    "mean": -40.33056680161943,
+    "std": 4.594870683155292,
+    "skewness": 0.30082365045963827,
+    "kurtosis": -0.27514747033465214,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 4,
+    "target_bin_avg": null
+  },
+  "euribor3m": {
+    "description": "euribor 3 month rate - daily indicator",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.636,
+    "max": 5.0,
+    "mean": 3.708058704453441,
+    "std": 1.7029067592278433,
+    "skewness": -0.8482411644565605,
+    "kurtosis": -1.176653937534688,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "nr_employed": {
+    "description": "number of employees - quarterly indicator",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 4963.6,
+    "max": 5228.1,
+    "mean": 5170.140890688258,
+    "std": 72.4512024911246,
+    "skewness": -1.2009349974740908,
+    "kurtosis": 0.3845006023887687,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 3,
+    "target_bin_avg": null
+  }
+}

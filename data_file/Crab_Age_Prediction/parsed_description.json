@@ -1,0 +1,34 @@
+{
+  "Sex": {
+    "description": "Gender of the Crab - Male, Female and Indeterminate.",
+    "type": "categorical"
+  },
+  "Length": {
+    "description": "Length of the Crab (in Feet; 1 foot = 30.48 cms)",
+    "type": "numerical"
+  },
+  "Diameter": {
+    "description": "Diameter of the Crab (in Feet; 1 foot = 30.48 cms)",
+    "type": "numerical"
+  },
+  "Height": {
+    "description": "Height of the Crab (in Feet; 1 foot = 30.48 cms)",
+    "type": "numerical"
+  },
+  "Weight": {
+    "description": "Weight of the Crab (in ounces; 1 Pound = 16 ounces)",
+    "type": "numerical"
+  },
+  "Shucked_Weight": {
+    "description": "Weight without the shell (in ounces; 1 Pound = 16 ounces)",
+    "type": "numerical"
+  },
+  "Viscera_Weight": {
+    "description": "Viscera weight around abdominal organs (in ounces; 1 Pound = 16 ounces)",
+    "type": "numerical"
+  },
+  "Shell_Weight": {
+    "description": "Weight of the Shell (in ounces; 1 Pound = 16 ounces)",
+    "type": "numerical"
+  }
+}

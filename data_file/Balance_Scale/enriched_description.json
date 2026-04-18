@@ -1,0 +1,86 @@
+{
+  "L_Weight": {
+    "description": "Left weight in balance scale",
+    "type": "categorical",
+    "values": [
+      "5.0",
+      "1.0",
+      "3.0",
+      "4.0",
+      "2.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      83,
+      79,
+      74,
+      73,
+      66
+    ],
+    "target_bin_avg": null
+  },
+  "L_Distance": {
+    "description": "Left distance in balance scale",
+    "type": "categorical",
+    "values": [
+      "3.0",
+      "5.0",
+      "1.0",
+      "2.0",
+      "4.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      84,
+      78,
+      73,
+      73,
+      67
+    ],
+    "target_bin_avg": null
+  },
+  "R_Weight": {
+    "description": "Right weight in balance scale",
+    "type": "categorical",
+    "values": [
+      "2.0",
+      "3.0",
+      "1.0",
+      "5.0",
+      "4.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      80,
+      78,
+      75,
+      72,
+      70
+    ],
+    "target_bin_avg": null
+  },
+  "R_Distance": {
+    "description": "Right distance in balance scale",
+    "type": "categorical",
+    "values": [
+      "5.0",
+      "1.0",
+      "2.0",
+      "3.0",
+      "4.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      80,
+      78,
+      77,
+      74,
+      66
+    ],
+    "target_bin_avg": null
+  }
+}

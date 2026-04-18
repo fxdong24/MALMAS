@@ -1,0 +1,1 @@
+Data were extracted from images that were taken for the evaluation of an authentication procedure for banknotes.

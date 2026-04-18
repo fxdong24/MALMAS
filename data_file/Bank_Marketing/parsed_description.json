@@ -1,0 +1,82 @@
+{
+  "age": {
+    "description": "the age of an individual",
+    "type": "numerical"
+  },
+  "job": {
+    "description": "type of job",
+    "type": "categorical"
+  },
+  "marital": {
+    "description": "marital status (divorced includes widowed)",
+    "type": "categorical"
+  },
+  "education": {
+    "description": "level of education",
+    "type": "categorical"
+  },
+  "default": {
+    "description": "has credit in default",
+    "type": "categorical"
+  },
+  "housing": {
+    "description": "has housing loan",
+    "type": "categorical"
+  },
+  "loan": {
+    "description": "has personal loan",
+    "type": "categorical"
+  },
+  "contact": {
+    "description": "contact communication type",
+    "type": "categorical"
+  },
+  "month": {
+    "description": "last contact month of year",
+    "type": "categorical"
+  },
+  "day_of_week": {
+    "description": "last contact day of the week",
+    "type": "categorical"
+  },
+  "duration": {
+    "description": "last contact duration in seconds (should not be used for realistic modeling)",
+    "type": "numerical"
+  },
+  "campaign": {
+    "description": "number of contacts performed during this campaign for this client",
+    "type": "numerical"
+  },
+  "pdays": {
+    "description": "number of days since last contact from previous campaign (999 means not previously contacted)",
+    "type": "numerical"
+  },
+  "previous": {
+    "description": "number of contacts before this campaign for this client",
+    "type": "numerical"
+  },
+  "poutcome": {
+    "description": "outcome of the previous marketing campaign",
+    "type": "categorical"
+  },
+  "emp_var_rate": {
+    "description": "employment variation rate - quarterly indicator",
+    "type": "numerical"
+  },
+  "cons_price_idx": {
+    "description": "consumer price index - monthly indicator",
+    "type": "numerical"
+  },
+  "cons_conf_idx": {
+    "description": "consumer confidence index - monthly indicator",
+    "type": "numerical"
+  },
+  "euribor3m": {
+    "description": "euribor 3 month rate - daily indicator",
+    "type": "numerical"
+  },
+  "nr_employed": {
+    "description": "number of employees - quarterly indicator",
+    "type": "numerical"
+  }
+}

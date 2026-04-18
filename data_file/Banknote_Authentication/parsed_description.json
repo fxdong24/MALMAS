@@ -1,0 +1,20 @@
+{
+  "variance": {
+    "description": "Variance of Wavelet Transformed image",
+    "type": "numerical"
+  },
+  "skewness": {
+    "description": "Skewness of Wavelet Transformed image",
+    "type": "numerical"
+  },
+  "curtosis": {
+    "description": "Curtosis of Wavelet Transformed image",
+    "type": "numerical"
+  },
+  "entropy": {
+    "description": "Entropy of image",
+    "type": "numerical"
+  }
+}
+
+

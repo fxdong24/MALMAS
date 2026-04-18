@@ -1,0 +1,1 @@
+Based on demographic and employment-related attributes of individuals from the 1994 U.S. Census data, the task is to predict whether an individual's annual income exceeds $50K. This is a binary classification problem, where the target variable indicates whether the individual earns more than $50K per year.
