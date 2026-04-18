@@ -1,0 +1,351 @@
+{
+  "checking_status": {
+    "description": "Status of existing checking account, in Deutsche Mark.",
+    "type": "categorical",
+    "values": [
+      "no checking",
+      "<0",
+      "0<=X<200",
+      ">=200"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      233,
+      175,
+      151,
+      41
+    ],
+    "target_bin_avg": null
+  },
+  "duration": {
+    "description": "Duration in months",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 4.0,
+    "max": 72.0,
+    "mean": 20.998333333333335,
+    "std": 12.008552762704031,
+    "skewness": 1.031066795579655,
+    "kurtosis": 0.8080566865569616,
+    "outlier_ratio_3sigma": 0.011666666666666667,
+    "num_modes_estimated": 6,
+    "target_bin_avg": null
+  },
+  "credit_history": {
+    "description": "Credit history",
+    "type": "categorical",
+    "values": [
+      "existing paid",
+      "critical/other existing credit",
+      "delayed previously",
+      "all paid",
+      "no credits/all paid"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      330,
+      172,
+      51,
+      28,
+      19
+    ],
+    "target_bin_avg": null
+  },
+  "purpose": {
+    "description": "Purpose of the credit",
+    "type": "categorical",
+    "values": [
+      "radio/tv",
+      "new car",
+      "furniture/equipment",
+      "used car",
+      "business",
+      "education",
+      "repairs",
+      "domestic appliance",
+      "other",
+      "retraining"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 10,
+    "value_frequencies": [
+      170,
+      143,
+      107,
+      66,
+      50,
+      32,
+      13,
+      9,
+      7,
+      3
+    ],
+    "target_bin_avg": null
+  },
+  "credit_amount": {
+    "description": "Credit amount",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 250.0,
+    "max": 15857.0,
+    "mean": 3331.265,
+    "std": 2858.032616241605,
+    "skewness": 1.8046514749400306,
+    "kurtosis": 3.350212669459011,
+    "outlier_ratio_3sigma": 0.023333333333333334,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "savings_status": {
+    "description": "Status of savings account/bonds, in Deutsche Mark.",
+    "type": "categorical",
+    "values": [
+      "<100",
+      "no known savings",
+      "100<=X<500",
+      ">=1000",
+      "500<=X<1000"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      364,
+      112,
+      64,
+      31,
+      29
+    ],
+    "target_bin_avg": null
+  },
+  "employment": {
+    "description": "Present employment, in number of years.",
+    "type": "categorical",
+    "values": [
+      "1<=X<4",
+      ">=7",
+      "<1",
+      "4<=X<7",
+      "unemployed"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      194,
+      147,
+      111,
+      105,
+      43
+    ],
+    "target_bin_avg": null
+  },
+  "installment_commitment": {
+    "description": "Installment rate in percentage of disposable income",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1.0,
+    "max": 4.0,
+    "mean": 2.945,
+    "std": 1.1331880655860458,
+    "skewness": -0.4926579109745934,
+    "kurtosis": -1.2695924792575608,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 4,
+    "target_bin_avg": null
+  },
+  "personal_status": {
+    "description": "Personal status (married, single,...) and sex",
+    "type": "categorical",
+    "values": [
+      "male single",
+      "female div/dep/mar",
+      "male mar/wid",
+      "male div/sep"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      335,
+      177,
+      57,
+      31
+    ],
+    "target_bin_avg": null
+  },
+  "other_parties": {
+    "description": "Other debtors / guarantors",
+    "type": "categorical",
+    "values": [
+      "none",
+      "guarantor",
+      "co applicant"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      541,
+      32,
+      27
+    ],
+    "target_bin_avg": null
+  },
+  "residence_since": {
+    "description": "Present residence since X years",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1.0,
+    "max": 4.0,
+    "mean": 2.835,
+    "std": 1.1194628153680017,
+    "skewness": -0.2802557889463868,
+    "kurtosis": -1.394847565090275,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 4,
+    "target_bin_avg": null
+  },
+  "property_magnitude": {
+    "description": "Property (e.g. real estate)",
+    "type": "categorical",
+    "values": [
+      "car",
+      "real estate",
+      "life insurance",
+      "no known property"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      189,
+      171,
+      135,
+      105
+    ],
+    "target_bin_avg": null
+  },
+  "age": {
+    "description": "Age in years",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 19.0,
+    "max": 75.0,
+    "mean": 35.47,
+    "std": 11.389555300797152,
+    "skewness": 1.0091127801250523,
+    "kurtosis": 0.5736674313843486,
+    "outlier_ratio_3sigma": 0.006666666666666667,
+    "num_modes_estimated": 1,
+    "target_bin_avg": null
+  },
+  "other_payment_plans": {
+    "description": "Other installment plans (banks, stores)",
+    "type": "categorical",
+    "values": [
+      "none",
+      "bank",
+      "stores"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      496,
+      76,
+      28
+    ],
+    "target_bin_avg": null
+  },
+  "housing": {
+    "description": "Housing (rent, own,...)",
+    "type": "categorical",
+    "values": [
+      "own",
+      "rent",
+      "for free"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      423,
+      102,
+      75
+    ],
+    "target_bin_avg": null
+  },
+  "existing_credits": {
+    "description": "Number of existing credits at this bank",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1.0,
+    "max": 4.0,
+    "mean": 1.4166666666666667,
+    "std": 0.6058057085262792,
+    "skewness": 1.4299869686727251,
+    "kurtosis": 2.250401616026414,
+    "outlier_ratio_3sigma": 0.01,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "job": {
+    "description": "Job",
+    "type": "categorical",
+    "values": [
+      "skilled",
+      "unskilled resident",
+      "high qualif/self emp/mgmt",
+      "unemp/unskilled non res"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      373,
+      122,
+      89,
+      16
+    ],
+    "target_bin_avg": null
+  },
+  "num_dependents": {
+    "description": "Number of people being liable to provide maintenance for",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1.0,
+    "max": 2.0,
+    "mean": 1.155,
+    "std": 0.36220664832867044,
+    "skewness": 1.9113610849005853,
+    "kurtosis": 1.6588194962410006,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 0,
+    "target_bin_avg": null
+  },
+  "own_telephone": {
+    "description": "Telephone",
+    "type": "categorical",
+    "values": [
+      "none",
+      "yes"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      342,
+      258
+    ],
+    "target_bin_avg": null
+  },
+  "foreign_worker": {
+    "description": "Foreign worker",
+    "type": "categorical",
+    "values": [
+      "yes",
+      "no"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      579,
+      21
+    ],
+    "target_bin_avg": null
+  }
+}
