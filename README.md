@@ -208,43 +208,6 @@ If you use this code in your research, please cite:
 }
 ```
 
-## Key Components
-
-### Memory System (`main_demo/memory.py`)
-
-Each agent maintains three-level memory:
-
-- **Procedural**: Successful feature transformations
-- **Feedback**: Feature effectiveness scores
-- **Conceptual**: LLM-generated rules from effective patterns
-
-### Six Specialized Agents
-
-| Agent                     | Focus                         |
-| ------------------------- | ----------------------------- |
-| UnaryFeatureAgent         | Single-column transformations |
-| CrossCompositionalAgent   | Cross-column interactions     |
-| AggregationConstructAgent | Group-based aggregations      |
-| TemporalFeatureAgent      | Time-based features           |
-| LocalTransformAgent       | Local transformations         |
-| LocalPatternAgent         | Distributional patterns       |
-
-## Troubleshooting
-
-For large datasets or API rate limits, adjust `Nround` and `long_memory_feature_num`:
-
-```python
-await MALMAS_random_experiments_async(
-    ...,
-    Nround=2,
-    long_memory_feature_num=2
-)
-```
-
-## License
-
-[MIT License](LICENSE)
-
 ## Contact
 
-For questions or issues, please open a GitHub issue or contact [email].
+For questions or issues, please open a GitHub issue or contact [fengxiandong@mail.ustc.edu.cn].
