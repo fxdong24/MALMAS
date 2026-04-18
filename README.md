@@ -200,11 +200,13 @@ result = run_baseline_experiments(
 If you use this code in your research, please cite:
 
 ```bibtex
-@inproceedings{malmas2024,
-  title={Memory-Augmented LLM-based Multi-Agent System for Automated Feature Generation on Tabular Data},
-  author={[Authors]},
-  booktitle={ACL},
-  year={2024}
+@inproceedings{
+anonymous2026memoryaugmented,
+title={Memory-Augmented {LLM}-based Multi-Agent System for Automated Feature Generation on Tabular Data},
+author={Anonymous},
+booktitle={The 64th Annual Meeting of the Association for Computational Linguistics},
+year={2026},
+url={https://openreview.net/forum?id=GQmJkf1fVl}
 }
 ```
 
