@@ -1,0 +1,152 @@
+{
+  "white_piece0_strength": {
+    "description": "Strength of the white piece ",
+    "type": "categorical",
+    "values": [
+      "6.0",
+      "0.0",
+      "7.0",
+      "4.0",
+      "5.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      762,
+      707,
+      633,
+      456,
+      131
+    ],
+    "target_bin_avg": null
+  },
+  "white_piece0_file": {
+    "description": "File (column) of the white piece on the chessboard ",
+    "type": "categorical",
+    "values": [
+      "6.0",
+      "0.0",
+      "3.0",
+      "2.0",
+      "1.0",
+      "4.0",
+      "5.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 7,
+    "value_frequencies": [
+      466,
+      440,
+      364,
+      360,
+      359,
+      351,
+      349
+    ],
+    "target_bin_avg": null
+  },
+  "white_piece0_rank": {
+    "description": "Rank (row) of the white piece on the chessboard",
+    "type": "categorical",
+    "values": [
+      "6.0",
+      "7.0",
+      "2.0",
+      "1.0",
+      "0.0",
+      "8.0",
+      "4.0",
+      "5.0",
+      "3.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 9,
+    "value_frequencies": [
+      385,
+      380,
+      375,
+      347,
+      313,
+      309,
+      210,
+      195,
+      175
+    ],
+    "target_bin_avg": null
+  },
+  "black_piece0_strength": {
+    "description": "Strength of the black piece",
+    "type": "categorical",
+    "values": [
+      "0.0",
+      "6.0",
+      "7.0",
+      "4.0",
+      "5.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      783,
+      697,
+      608,
+      452,
+      149
+    ],
+    "target_bin_avg": null
+  },
+  "black_piece0_file": {
+    "description": "File (column) of the black piece on the chessboard ",
+    "type": "categorical",
+    "values": [
+      "6.0",
+      "0.0",
+      "3.0",
+      "5.0",
+      "4.0",
+      "2.0",
+      "1.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 7,
+    "value_frequencies": [
+      460,
+      452,
+      372,
+      369,
+      350,
+      345,
+      341
+    ],
+    "target_bin_avg": null
+  },
+  "black_piece0_rank": {
+    "description": "Rank (row) of the black piece on the chessboard",
+    "type": "categorical",
+    "values": [
+      "1.0",
+      "2.0",
+      "7.0",
+      "8.0",
+      "6.0",
+      "0.0",
+      "5.0",
+      "3.0",
+      "4.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 9,
+    "value_frequencies": [
+      378,
+      365,
+      361,
+      339,
+      337,
+      308,
+      205,
+      204,
+      192
+    ],
+    "target_bin_avg": null
+  }
+}

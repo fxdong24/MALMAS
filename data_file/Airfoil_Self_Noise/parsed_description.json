@@ -1,0 +1,22 @@
+{
+  "frequency": {
+    "description": "Frequency (Hz)",
+    "type": "numerical"
+  },
+  "attack_angle": {
+    "description": "Attack angle (deg)",
+    "type": "numerical"
+  },
+  "chord_length": {
+    "description": "Chord length (m)",
+    "type": "numerical"
+  },
+  "free_stream_velocity": {
+    "description": "Free-stream velocity (m/s)",
+    "type": "numerical"
+  },
+  "suction_side_displacement_thickness": {
+    "description": "Suction side displacement thickness (m)",
+    "type": "numerical"
+  }
+}

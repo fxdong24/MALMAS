@@ -1,0 +1,12 @@
+{
+    "Clump_Thickness": "Measure of thickness of cell clusters, scaled to 10 distinct levels",
+    "Cell_Size_Uniformity": "Uniformity in size of the cells, scaled to 10 distinct levels",
+    "Cell_Shape_Uniformity": "Uniformity in shape of the cells, scaled to 10 distinct levels",
+    "Marginal_Adhesion": "Adhesion of cells at their margins, scaled to 10 distinct levels",
+    "Single_Epi_Cell_Size": "Size of epithelial cells, scaled to 10 distinct levels",
+    "Bare_Nuclei": "Count of nuclei without cytoplasm, scaled to 10 distinct levels (16 missing values)",
+    "Bland_Chromatin": "Texture of chromatin in the cell nucleus, scaled to 10 distinct levels",
+    "Normal_Nucleoli": "Presence of nucleoli in the nucleus, scaled to 10 distinct levels",
+    "Mitoses": "Frequency of mitotic cell division, scaled to 9 distinct levels"
+  }
+  

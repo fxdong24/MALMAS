@@ -1,0 +1,26 @@
+{
+  "age": {
+    "description": "Age of primary beneficiary",
+    "type": "numerical"
+  },
+  "sex": {
+    "description": "Insurance contractor gender (female, male)",
+    "type": "categorical"
+  },
+  "bmi": {
+    "description": "Body mass index",
+    "type": "numerical"
+  },
+  "children": {
+    "description": "Number of dependents covered by insurance",
+    "type": "numerical"
+  },
+  "smoker": {
+    "description": "Smoking status",
+    "type": "categorical"
+  },
+  "region": {
+    "description": "Residential area in the US (northeast, southeast, southwest, northwest)",
+    "type": "categorical"
+  }
+}

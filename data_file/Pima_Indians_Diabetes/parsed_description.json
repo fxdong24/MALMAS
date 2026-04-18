@@ -1,0 +1,34 @@
+{
+  "Pregnancies": {
+    "description": "Number of times pregnant",
+    "type": "categorical"
+  },
+  "Glucose": {
+    "description": "Plasma glucose concentration at 2 hours in an oral glucose tolerance test",
+    "type": "numerical"
+  },
+  "BloodPressure": {
+    "description": "Diastolic blood pressure (mm Hg)",
+    "type": "numerical"
+  },
+  "SkinThickness": {
+    "description": "Triceps skin fold thickness (mm)",
+    "type": "numerical"
+  },
+  "Insulin": {
+    "description": "2-Hour serum insulin (mu U/ml)",
+    "type": "numerical"
+  },
+  "BMI": {
+    "description": "Body mass index (weight in kg/(height in m)^2)",
+    "type": "numerical"
+  },
+  "DiabetesPedigreeFunction": {
+    "description": "Diabetes pedigree function",
+    "type": "numerical"
+  },
+  "Age": {
+    "description": "Age (years)",
+    "type": "numerical"
+  }
+}

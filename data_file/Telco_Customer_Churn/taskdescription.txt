@@ -1,0 +1,1 @@
+Predicting whether telecom customers are likely to churn in the near future helps companies proactively identify high-risk customers and develop retention strategies. By analyzing customers' service usage and account information, telecom companies aim to predict which customers might churn, enabling early interventions to enhance customer retention and reduce marketing costs.

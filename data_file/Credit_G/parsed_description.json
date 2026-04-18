@@ -1,0 +1,82 @@
+{
+  "checking_status": {
+    "description": "Status of existing checking account, in Deutsche Mark.",
+    "type": "categorical"
+  },
+  "duration": {
+    "description": "Duration in months",
+    "type": "numerical"
+  },
+  "credit_history": {
+    "description": "Credit history",
+    "type": "categorical"
+  },
+  "purpose": {
+    "description": "Purpose of the credit",
+    "type": "categorical"
+  },
+  "credit_amount": {
+    "description": "Credit amount",
+    "type": "numerical"
+  },
+  "savings_status": {
+    "description": "Status of savings account/bonds, in Deutsche Mark.",
+    "type": "categorical"
+  },
+  "employment": {
+    "description": "Present employment, in number of years.",
+    "type": "categorical"
+  },
+  "installment_commitment": {
+    "description": "Installment rate in percentage of disposable income",
+    "type": "numerical"
+  },
+  "personal_status": {
+    "description": "Personal status (married, single,...) and sex",
+    "type": "categorical"
+  },
+  "other_parties": {
+    "description": "Other debtors / guarantors",
+    "type": "categorical"
+  },
+  "residence_since": {
+    "description": "Present residence since X years",
+    "type": "numerical"
+  },
+  "property_magnitude": {
+    "description": "Property (e.g. real estate)",
+    "type": "categorical"
+  },
+  "age": {
+    "description": "Age in years",
+    "type": "numerical"
+  },
+  "other_payment_plans": {
+    "description": "Other installment plans (banks, stores)",
+    "type": "categorical"
+  },
+  "housing": {
+    "description": "Housing (rent, own,...)",
+    "type": "categorical"
+  },
+  "existing_credits": {
+    "description": "Number of existing credits at this bank",
+    "type": "numerical"
+  },
+  "job": {
+    "description": "Job",
+    "type": "categorical"
+  },
+  "num_dependents": {
+    "description": "Number of people being liable to provide maintenance for",
+    "type": "numerical"
+  },
+  "own_telephone": {
+    "description": "Telephone",
+    "type": "categorical"
+  },
+  "foreign_worker": {
+    "description": "Foreign worker",
+    "type": "categorical"
+  }
+}

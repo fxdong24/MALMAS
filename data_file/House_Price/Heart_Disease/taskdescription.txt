@@ -1,0 +1,1 @@
+This dataset contains medical records of individuals undergoing cardiovascular diagnosis. The task is to predict the presence of heart disease based on a combination of demographic and medical attributes.

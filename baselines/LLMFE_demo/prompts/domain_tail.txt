@@ -1,0 +1,7 @@
+Please generate as many new features as possible using the information from the task, feature descriptions, examples, and your domain understanding of the dataset.  
+Remove any irrelevant, redundant, or less informative features to enhance overall performance.  
+
+First, describe your new feature transformation and the main steps in a concise, one-sentence docstring.  
+Then, implement it in Python as a function that adheres to the given specifications.  
+
+Avoid providing any further explanations or additional descriptions.

@@ -1,0 +1,303 @@
+{
+  "Hours_Studied": {
+    "description": "Number of hours spent studying per week",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 2.0,
+    "max": 44.0,
+    "mean": 20.12878787878788,
+    "std": 5.955467230385178,
+    "skewness": 0.13630874233953222,
+    "kurtosis": 0.239535794468829,
+    "outlier_ratio_3sigma": 0.005050505050505051,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "Attendance": {
+    "description": "Percentage of classes attended",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 60.0,
+    "max": 100.0,
+    "mean": 80.38257575757575,
+    "std": 11.792296417504907,
+    "skewness": -0.024989352250491575,
+    "kurtosis": -1.2604910192845797,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "Parental_Involvement": {
+    "description": "Level of parental involvement in the student's education (Low, Medium, High)",
+    "type": "categorical",
+    "values": [
+      "Medium",
+      "High",
+      "Low"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      400,
+      242,
+      150
+    ],
+    "target_bin_avg": null
+  },
+  "Access_to_Resources": {
+    "description": "Availability of educational resources (Low, Medium, High)",
+    "type": "categorical",
+    "values": [
+      "Medium",
+      "High",
+      "Low"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      405,
+      236,
+      151
+    ],
+    "target_bin_avg": null
+  },
+  "Extracurricular_Activities": {
+    "description": "Participation in extracurricular activities (1, 0)",
+    "type": "categorical",
+    "values": [
+      "1.0",
+      "0.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      456,
+      336
+    ],
+    "target_bin_avg": null
+  },
+  "Sleep_Hours": {
+    "description": "Average number of hours of sleep per night",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 4.0,
+    "max": 10.0,
+    "mean": 7.049242424242424,
+    "std": 1.5330656204250144,
+    "skewness": 0.003612052393748032,
+    "kurtosis": -0.6324743572869393,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 4,
+    "target_bin_avg": null
+  },
+  "Previous_Scores": {
+    "description": "Scores from previous exams",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 50.0,
+    "max": 100.0,
+    "mean": 75.08080808080808,
+    "std": 14.654160159000886,
+    "skewness": 0.005341598366497755,
+    "kurtosis": -1.242492536850049,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 3,
+    "target_bin_avg": null
+  },
+  "Motivation_Level": {
+    "description": "Student's level of motivation (Low, Medium, High)",
+    "type": "categorical",
+    "values": [
+      "Medium",
+      "Low",
+      "High"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      394,
+      232,
+      166
+    ],
+    "target_bin_avg": null
+  },
+  "Internet_Access": {
+    "description": "Availability of internet access (1, 0)",
+    "type": "categorical",
+    "values": [
+      "1.0",
+      "0.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      742,
+      50
+    ],
+    "target_bin_avg": null
+  },
+  "Tutoring_Sessions": {
+    "description": "Number of tutoring sessions attended per month",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 6.0,
+    "mean": 1.4835858585858586,
+    "std": 1.212965469017396,
+    "skewness": 0.790488087215794,
+    "kurtosis": 0.387411341135492,
+    "outlier_ratio_3sigma": 0.0025252525252525255,
+    "num_modes_estimated": 6,
+    "target_bin_avg": null
+  },
+  "Family_Income": {
+    "description": "Family income level (Low, Medium, High)",
+    "type": "categorical",
+    "values": [
+      "Medium",
+      "Low",
+      "High"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      328,
+      312,
+      152
+    ],
+    "target_bin_avg": null
+  },
+  "Teacher_Quality": {
+    "description": "Quality of the teachers (Low, Medium, High)",
+    "type": "categorical",
+    "values": [
+      "Medium",
+      "High",
+      "Low",
+      "nan"
+    ],
+    "missing_ratio": 0.008838383838383838,
+    "n_unique": 3,
+    "value_frequencies": [
+      480,
+      230,
+      75,
+      7
+    ],
+    "target_bin_avg": null
+  },
+  "School_Type": {
+    "description": "Type of school attended (Public, Private)",
+    "type": "categorical",
+    "values": [
+      "Public",
+      "Private"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      545,
+      247
+    ],
+    "target_bin_avg": null
+  },
+  "Peer_Influence": {
+    "description": "Influence of peers on academic performance (Positive, Neutral, Negative)",
+    "type": "categorical",
+    "values": [
+      "Neutral",
+      "Positive",
+      "Negative"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      335,
+      307,
+      150
+    ],
+    "target_bin_avg": null
+  },
+  "Physical_Activity": {
+    "description": "Average number of hours of physical activity per week",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 6.0,
+    "mean": 2.952020202020202,
+    "std": 1.00954782512876,
+    "skewness": -0.04418711155283858,
+    "kurtosis": 0.06176214716228445,
+    "outlier_ratio_3sigma": 0.0025252525252525255,
+    "num_modes_estimated": 7,
+    "target_bin_avg": null
+  },
+  "Learning_Disabilities": {
+    "description": "Presence of learning disabilities (1, 0)",
+    "type": "categorical",
+    "values": [
+      "0.0",
+      "1.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      725,
+      67
+    ],
+    "target_bin_avg": null
+  },
+  "Parental_Education_Level": {
+    "description": "Highest education level of parents (High School, College, Postgraduate)",
+    "type": "categorical",
+    "values": [
+      "High School",
+      "College",
+      "Postgraduate",
+      "nan"
+    ],
+    "missing_ratio": 0.016414141414141416,
+    "n_unique": 3,
+    "value_frequencies": [
+      374,
+      256,
+      149,
+      13
+    ],
+    "target_bin_avg": null
+  },
+  "Distance_from_Home": {
+    "description": "Distance from home to school (Near, Moderate, Far)",
+    "type": "categorical",
+    "values": [
+      "Near",
+      "Moderate",
+      "Far",
+      "nan"
+    ],
+    "missing_ratio": 0.013888888888888888,
+    "n_unique": 3,
+    "value_frequencies": [
+      478,
+      231,
+      72,
+      11
+    ],
+    "target_bin_avg": null
+  },
+  "Gender": {
+    "description": "Gender of the student (Male, Female)",
+    "type": "categorical",
+    "values": [
+      "Male",
+      "Female"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      460,
+      332
+    ],
+    "target_bin_avg": null
+  }
+}

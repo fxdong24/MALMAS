@@ -1,0 +1,1 @@
+Predict the individual medical insurance cost (charges) based on demographic and lifestyle features such as age, gender, BMI, smoking status, and region. This is a supervised regression task where the target variable is 'charges'.

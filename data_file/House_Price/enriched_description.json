@@ -1,0 +1,1872 @@
+{
+  "Id": {
+    "name": "Id",
+    "description": "A unique identifier used to distinguish each record in the dataset.",
+    "type": "numerical"
+  },
+  "MSSubClass": {
+    "name": "MSSubClass",
+    "description": "Identifies the type of dwelling involved in the sale.",
+    "type": "categorical",
+    "values": [
+      "20",
+      "60",
+      "50",
+      "120",
+      "70",
+      "30",
+      "160",
+      "80",
+      "90",
+      "190",
+      "75",
+      "85",
+      "45",
+      "180",
+      "40"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 15,
+    "value_frequencies": [
+      378,
+      207,
+      97,
+      57,
+      49,
+      46,
+      45,
+      40,
+      36,
+      23,
+      13,
+      13,
+      9,
+      7,
+      2
+    ],
+    "target_bin_avg": [
+      185972.7619047619,
+      101949.12280701754,
+      143398.1443298969,
+      223763.43866171004,
+      152902.83146067415,
+      162745.6893939394
+    ]
+  },
+  "MSZoning": {
+    "name": "MSZoning",
+    "description": "Identifies the general zoning classification of the sale.",
+    "type": "categorical",
+    "values": [
+      "RL",
+      "RM",
+      "FV",
+      "RH",
+      "C (all)"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      807,
+      155,
+      43,
+      13,
+      4
+    ],
+    "target_bin_avg": null
+  },
+  "LotFrontage": {
+    "name": "LotFrontage",
+    "description": "Linear feet of street connected to property",
+    "type": "numerical",
+    "missing_ratio": 0.18590998043052837,
+    "min": 21.0,
+    "max": 313.0,
+    "mean": 70.375,
+    "std": 25.53360731049183,
+    "skewness": 2.528660531975879,
+    "kurtosis": 20.03893133128362,
+    "outlier_ratio_3sigma": 0.01201923076923077,
+    "num_modes_estimated": 1,
+    "target_bin_avg": [
+      150837.9746835443,
+      149738.17441860464,
+      165812.53333333333,
+      140295.01801801802,
+      180448.42857142858,
+      163050.2098765432,
+      196450.8705882353,
+      195114.65789473685,
+      222331.24444444446,
+      248081.57954545456
+    ]
+  },
+  "LotArea": {
+    "name": "LotArea",
+    "description": "Lot size in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1300.0,
+    "max": 215245.0,
+    "mean": 10745.437377690801,
+    "std": 11329.753422670045,
+    "skewness": 11.649803660441766,
+    "kurtosis": 172.88202743636208,
+    "outlier_ratio_3sigma": 0.010763209393346379,
+    "num_modes_estimated": 6,
+    "target_bin_avg": [
+      143949.99019607843,
+      133478.35922330097,
+      150609.6568627451,
+      158679.6568627451,
+      170915.193877551,
+      181050.40566037735,
+      183131.60784313726,
+      209788.8725490196,
+      230411.0,
+      250505.33009708737
+    ]
+  },
+  "Street": {
+    "name": "Street",
+    "description": "Type of road access to property",
+    "type": "categorical",
+    "values": [
+      "Pave",
+      "Grvl"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      1018,
+      4
+    ],
+    "target_bin_avg": null
+  },
+  "Alley": {
+    "name": "Alley",
+    "description": "Type of alley access to property",
+    "type": "categorical",
+    "values": [
+      "nan",
+      "Grvl",
+      "Pave"
+    ],
+    "missing_ratio": 0.9354207436399217,
+    "n_unique": 2,
+    "value_frequencies": [
+      956,
+      42,
+      24
+    ],
+    "target_bin_avg": null
+  },
+  "LotShape": {
+    "name": "LotShape",
+    "description": "General shape of property",
+    "type": "categorical",
+    "values": [
+      "Reg",
+      "IR1",
+      "IR2",
+      "IR3"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      638,
+      344,
+      32,
+      8
+    ],
+    "target_bin_avg": null
+  },
+  "LandContour": {
+    "name": "LandContour",
+    "description": "Flatness of the property",
+    "type": "categorical",
+    "values": [
+      "Lvl",
+      "Bnk",
+      "HLS",
+      "Low"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      928,
+      40,
+      30,
+      24
+    ],
+    "target_bin_avg": null
+  },
+  "Utilities": {
+    "name": "Utilities",
+    "description": "Type of utilities available",
+    "type": "categorical",
+    "values": [
+      "AllPub",
+      "NoSeWa"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      1021,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "LotConfig": {
+    "name": "LotConfig",
+    "description": "Lot configuration",
+    "type": "categorical",
+    "values": [
+      "Inside",
+      "Corner",
+      "CulDSac",
+      "FR2",
+      "FR3"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      710,
+      199,
+      75,
+      35,
+      3
+    ],
+    "target_bin_avg": null
+  },
+  "LandSlope": {
+    "name": "LandSlope",
+    "description": "Slope of property",
+    "type": "categorical",
+    "values": [
+      "Gtl",
+      "Mod",
+      "Sev"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      965,
+      48,
+      9
+    ],
+    "target_bin_avg": null
+  },
+  "Neighborhood": {
+    "name": "Neighborhood",
+    "description": "Physical locations within Ames city limits",
+    "type": "categorical",
+    "values": [
+      "NAmes",
+      "CollgCr",
+      "OldTown",
+      "Edwards",
+      "Somerst",
+      "NWAmes",
+      "Gilbert",
+      "NridgHt",
+      "Sawyer",
+      "BrkSide",
+      "SawyerW",
+      "Crawfor",
+      "Mitchel",
+      "NoRidge",
+      "Timber",
+      "IDOTRR",
+      "StoneBr",
+      "ClearCr",
+      "SWISU",
+      "Blmngtn",
+      "BrDale",
+      "MeadowV",
+      "Veenker",
+      "NPkVill",
+      "Blueste"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 25,
+    "value_frequencies": [
+      155,
+      109,
+      82,
+      79,
+      57,
+      54,
+      52,
+      50,
+      48,
+      41,
+      38,
+      38,
+      34,
+      28,
+      27,
+      24,
+      20,
+      19,
+      16,
+      14,
+      12,
+      10,
+      8,
+      6,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "Condition1": {
+    "name": "Condition1",
+    "description": "Proximity to various conditions",
+    "type": "categorical",
+    "values": [
+      "Norm",
+      "Feedr",
+      "Artery",
+      "RRAn",
+      "PosN",
+      "RRAe",
+      "PosA",
+      "RRNn",
+      "RRNe"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 9,
+    "value_frequencies": [
+      878,
+      57,
+      36,
+      16,
+      14,
+      9,
+      6,
+      5,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "Condition2": {
+    "name": "Condition2",
+    "description": "Proximity to various conditions (if more than one is present)",
+    "type": "categorical",
+    "values": [
+      "Norm",
+      "Feedr",
+      "PosN",
+      "Artery",
+      "RRAe",
+      "RRAn"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 6,
+    "value_frequencies": [
+      1013,
+      3,
+      2,
+      2,
+      1,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "BldgType": {
+    "name": "BldgType",
+    "description": "Type of dwelling",
+    "type": "categorical",
+    "values": [
+      "1Fam",
+      "TwnhsE",
+      "Duplex",
+      "Twnhs",
+      "2fmCon"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      853,
+      80,
+      36,
+      29,
+      24
+    ],
+    "target_bin_avg": null
+  },
+  "HouseStyle": {
+    "name": "HouseStyle",
+    "description": "Style of dwelling",
+    "type": "categorical",
+    "values": [
+      "1Story",
+      "2Story",
+      "1.5Fin",
+      "SLvl",
+      "SFoyer",
+      "1.5Unf",
+      "2.5Unf",
+      "2.5Fin"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 8,
+    "value_frequencies": [
+      506,
+      316,
+      104,
+      47,
+      22,
+      11,
+      9,
+      7
+    ],
+    "target_bin_avg": null
+  },
+  "OverallQual": {
+    "name": "OverallQual",
+    "description": "Rates the overall material and finish of the house",
+    "type": "categorical",
+    "values": [
+      "6",
+      "5",
+      "7",
+      "8",
+      "4",
+      "9",
+      "3",
+      "10",
+      "1",
+      "2"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 10,
+    "value_frequencies": [
+      271,
+      261,
+      230,
+      122,
+      80,
+      30,
+      14,
+      11,
+      2,
+      1
+    ],
+    "target_bin_avg": [
+      103116.49484536082,
+      133982.09961685824,
+      162075.26199261993,
+      206433.64782608696,
+      300170.6073619632
+    ]
+  },
+  "OverallCond": {
+    "name": "OverallCond",
+    "description": "Rates the overall condition of the house",
+    "type": "categorical",
+    "values": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "4",
+      "3",
+      "9",
+      "2",
+      "1"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 9,
+    "value_frequencies": [
+      579,
+      179,
+      142,
+      45,
+      37,
+      18,
+      17,
+      4,
+      1
+    ],
+    "target_bin_avg": [
+      116557.2,
+      203043.70293609673,
+      153470.85474860336,
+      163110.55392156861
+    ]
+  },
+  "YearBuilt": {
+    "name": "YearBuilt",
+    "description": "Original construction date",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1872.0,
+    "max": 2010.0,
+    "mean": 1970.995107632094,
+    "std": 30.748816107389136,
+    "skewness": -0.6201454849115322,
+    "kurtosis": -0.4679096165535288,
+    "outlier_ratio_3sigma": 0.0009784735812133072,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      135479.2,
+      136537.46666666667,
+      133540.931372549,
+      150968.42105263157,
+      152409.68421052632,
+      164377.1090909091,
+      221820.30927835053,
+      227151.84615384616,
+      217681.10833333334,
+      267145.04672897194
+    ]
+  },
+  "YearRemodAdd": {
+    "name": "YearRemodAdd",
+    "description": "Remodel date (same as construction date if no remodeling or additions)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1950.0,
+    "max": 2010.0,
+    "mean": 1984.757338551859,
+    "std": 20.747108880421006,
+    "skewness": -0.49987589489713563,
+    "kurtosis": -1.2939027783636858,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      123224.19306930693,
+      150221.49425287356,
+      148014.55462184874,
+      187133.67676767678,
+      209577.89156626505,
+      200335.22448979592,
+      202189.87288135593,
+      204694.49019607843,
+      241669.1393939394
+    ]
+  },
+  "RoofStyle": {
+    "name": "RoofStyle",
+    "description": "Type of roof",
+    "type": "categorical",
+    "values": [
+      "Gable",
+      "Hip",
+      "Flat",
+      "Gambrel",
+      "Mansard",
+      "Shed"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 6,
+    "value_frequencies": [
+      788,
+      208,
+      11,
+      9,
+      4,
+      2
+    ],
+    "target_bin_avg": null
+  },
+  "RoofMatl": {
+    "name": "RoofMatl",
+    "description": "Roof material",
+    "type": "categorical",
+    "values": [
+      "CompShg",
+      "Tar&Grv",
+      "WdShngl",
+      "WdShake",
+      "Metal",
+      "ClyTile",
+      "Roll"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 7,
+    "value_frequencies": [
+      1003,
+      9,
+      4,
+      3,
+      1,
+      1,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "Exterior1st": {
+    "name": "Exterior1st",
+    "description": "Exterior covering on house",
+    "type": "categorical",
+    "values": [
+      "VinylSd",
+      "HdBoard",
+      "Wd Sdng",
+      "MetalSd",
+      "Plywood",
+      "CemntBd",
+      "BrkFace",
+      "Stucco",
+      "WdShing",
+      "AsbShng",
+      "BrkComm",
+      "CBlock",
+      "AsphShn",
+      "Stone"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 14,
+    "value_frequencies": [
+      368,
+      155,
+      150,
+      149,
+      71,
+      39,
+      35,
+      18,
+      17,
+      15,
+      2,
+      1,
+      1,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "Exterior2nd": {
+    "name": "Exterior2nd",
+    "description": "Exterior covering on house (if more than one material)",
+    "type": "categorical",
+    "values": [
+      "VinylSd",
+      "Wd Sdng",
+      "HdBoard",
+      "MetalSd",
+      "Plywood",
+      "CmentBd",
+      "Wd Shng",
+      "Stucco",
+      "AsbShng",
+      "BrkFace",
+      "Brk Cmn",
+      "ImStucc",
+      "Stone",
+      "AsphShn",
+      "Other",
+      "CBlock"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 16,
+    "value_frequencies": [
+      359,
+      144,
+      143,
+      142,
+      98,
+      38,
+      30,
+      20,
+      16,
+      14,
+      6,
+      5,
+      3,
+      2,
+      1,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "MasVnrType": {
+    "name": "MasVnrType",
+    "description": "Masonry veneer type",
+    "type": "categorical",
+    "values": [
+      "None",
+      "BrkFace",
+      "Stone",
+      "BrkCmn",
+      "nan"
+    ],
+    "missing_ratio": 0.0029354207436399216,
+    "n_unique": 4,
+    "value_frequencies": [
+      587,
+      329,
+      91,
+      12,
+      3
+    ],
+    "target_bin_avg": null
+  },
+  "MasVnrArea": {
+    "name": "MasVnrArea",
+    "description": "Masonry veneer area in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0029354207436399216,
+    "min": 0.0,
+    "max": 1378.0,
+    "mean": 105.26104023552503,
+    "std": 172.70770520571375,
+    "skewness": 2.213949550031136,
+    "kurtosis": 6.322166710743165,
+    "outlier_ratio_3sigma": 0.021589793915603533,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      159853.9540229885,
+      182471.41,
+      188533.820754717,
+      217605.28431372548,
+      263427.93137254904
+    ]
+  },
+  "ExterQual": {
+    "name": "ExterQual",
+    "description": "Evaluates the quality of the material on the exterior",
+    "type": "categorical",
+    "values": [
+      "TA",
+      "Gd",
+      "Ex",
+      "Fa"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      637,
+      340,
+      35,
+      10
+    ],
+    "target_bin_avg": null
+  },
+  "ExterCond": {
+    "name": "ExterCond",
+    "description": "Evaluates the present condition of the material on the exterior",
+    "type": "categorical",
+    "values": [
+      "TA",
+      "Gd",
+      "Fa",
+      "Ex",
+      "Po"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      896,
+      101,
+      22,
+      2,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "Foundation": {
+    "name": "Foundation",
+    "description": "Type of foundation",
+    "type": "categorical",
+    "values": [
+      "PConc",
+      "CBlock",
+      "BrkTil",
+      "Slab",
+      "Stone",
+      "Wood"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 6,
+    "value_frequencies": [
+      456,
+      437,
+      103,
+      18,
+      5,
+      3
+    ],
+    "target_bin_avg": null
+  },
+  "BsmtQual": {
+    "name": "BsmtQual",
+    "description": "Evaluates the height of the basement",
+    "type": "categorical",
+    "values": [
+      "TA",
+      "Gd",
+      "Ex",
+      "Fa",
+      "nan"
+    ],
+    "missing_ratio": 0.025440313111545987,
+    "n_unique": 4,
+    "value_frequencies": [
+      447,
+      435,
+      86,
+      28,
+      26
+    ],
+    "target_bin_avg": null
+  },
+  "BsmtCond": {
+    "name": "BsmtCond",
+    "description": "Evaluates the general condition of the basement",
+    "type": "categorical",
+    "values": [
+      "TA",
+      "Gd",
+      "Fa",
+      "nan",
+      "Po"
+    ],
+    "missing_ratio": 0.025440313111545987,
+    "n_unique": 4,
+    "value_frequencies": [
+      913,
+      47,
+      35,
+      26,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "BsmtExposure": {
+    "name": "BsmtExposure",
+    "description": "Refers to walkout or garden level walls",
+    "type": "categorical",
+    "values": [
+      "No",
+      "Av",
+      "Gd",
+      "Mn",
+      "nan"
+    ],
+    "missing_ratio": 0.025440313111545987,
+    "n_unique": 4,
+    "value_frequencies": [
+      669,
+      151,
+      97,
+      79,
+      26
+    ],
+    "target_bin_avg": null
+  },
+  "BsmtFinType1": {
+    "name": "BsmtFinType1",
+    "description": "Rating of basement finished area",
+    "type": "categorical",
+    "values": [
+      "Unf",
+      "GLQ",
+      "ALQ",
+      "BLQ",
+      "Rec",
+      "LwQ",
+      "nan"
+    ],
+    "missing_ratio": 0.025440313111545987,
+    "n_unique": 6,
+    "value_frequencies": [
+      299,
+      296,
+      156,
+      105,
+      87,
+      53,
+      26
+    ],
+    "target_bin_avg": null
+  },
+  "BsmtFinSF1": {
+    "name": "BsmtFinSF1",
+    "description": "Type 1 finished square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 5644.0,
+    "mean": 446.1761252446184,
+    "std": 459.97117430597245,
+    "skewness": 2.0027560949858367,
+    "kurtosis": 15.314770799251702,
+    "outlier_ratio_3sigma": 0.003913894324853229,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      169337.6381418093,
+      149144.8811881188,
+      163788.33980582524,
+      160637.74509803922,
+      176979.9019607843,
+      198868.57425742573,
+      284480.0
+    ]
+  },
+  "BsmtFinType2": {
+    "name": "BsmtFinType2",
+    "description": "Rating of basement finished area (if multiple types)",
+    "type": "categorical",
+    "values": [
+      "Unf",
+      "Rec",
+      "LwQ",
+      "nan",
+      "ALQ",
+      "BLQ",
+      "GLQ"
+    ],
+    "missing_ratio": 0.025440313111545987,
+    "n_unique": 6,
+    "value_frequencies": [
+      885,
+      39,
+      30,
+      26,
+      17,
+      17,
+      8
+    ],
+    "target_bin_avg": null
+  },
+  "BsmtFinSF2": {
+    "name": "BsmtFinSF2",
+    "description": "Type 2 finished square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 1127.0,
+    "mean": 42.36888454011741,
+    "std": 151.21053141077272,
+    "skewness": 4.35090498757706,
+    "kurtosis": 20.54970943820191,
+    "outlier_ratio_3sigma": 0.03228962818003914,
+    "num_modes_estimated": 5,
+    "target_bin_avg": [
+      182690.58433079434,
+      169018.68932038834
+    ]
+  },
+  "BsmtUnfSF": {
+    "name": "BsmtUnfSF",
+    "description": "Unfinished square feet of basement area",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 2336.0,
+    "mean": 571.2230919765167,
+    "std": 446.0045316449431,
+    "skewness": 0.9000660117405093,
+    "kurtosis": 0.33997840180757377,
+    "outlier_ratio_3sigma": 0.004892367906066536,
+    "num_modes_estimated": 1,
+    "target_bin_avg": [
+      142979.14563106795,
+      174887.04901960783,
+      171977.62376237623,
+      194779.31067961166,
+      188769.38235294117,
+      192021.42857142858,
+      153832.179245283,
+      174631.73529411765,
+      193757.91176470587,
+      226696.11650485438
+    ]
+  },
+  "TotalBsmtSF": {
+    "name": "TotalBsmtSF",
+    "description": "Total square feet of basement area",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 6110.0,
+    "mean": 1059.7681017612524,
+    "std": 447.4234366625687,
+    "skewness": 1.848716999932738,
+    "kurtosis": 16.8574035394738,
+    "outlier_ratio_3sigma": 0.005870841487279843,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      123344.45098039215,
+      135598.4563106796,
+      157420.77450980392,
+      156348.74226804124,
+      154710.84112149532,
+      167837.79411764705,
+      192065.0,
+      202210.32352941178,
+      227390.28431372548,
+      295608.1844660194
+    ]
+  },
+  "Heating": {
+    "name": "Heating",
+    "description": "Type of heating",
+    "type": "categorical",
+    "values": [
+      "GasA",
+      "GasW",
+      "Grav",
+      "Wall",
+      "OthW",
+      "Floor"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 6,
+    "value_frequencies": [
+      997,
+      15,
+      4,
+      3,
+      2,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "HeatingQC": {
+    "name": "HeatingQC",
+    "description": "Heating quality and condition",
+    "type": "categorical",
+    "values": [
+      "Ex",
+      "TA",
+      "Gd",
+      "Fa",
+      "Po"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 5,
+    "value_frequencies": [
+      519,
+      294,
+      171,
+      37,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "CentralAir": {
+    "name": "CentralAir",
+    "description": "Central air conditioning",
+    "type": "categorical",
+    "values": [
+      "Y",
+      "N"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      947,
+      75
+    ],
+    "target_bin_avg": null
+  },
+  "Electrical": {
+    "name": "Electrical",
+    "description": "Electrical system",
+    "type": "categorical",
+    "values": [
+      "SBrkr",
+      "FuseA",
+      "FuseF",
+      "FuseP",
+      "nan"
+    ],
+    "missing_ratio": 0.0009784735812133072,
+    "n_unique": 4,
+    "value_frequencies": [
+      935,
+      60,
+      23,
+      3,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "1stFlrSF": {
+    "name": "1stFlrSF",
+    "description": "First Floor square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 334.0,
+    "max": 4692.0,
+    "mean": 1169.7377690802348,
+    "std": 389.55051538578357,
+    "skewness": 1.5121959870329948,
+    "kurtosis": 7.450465336349572,
+    "outlier_ratio_3sigma": 0.007827788649706457,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      125349.51960784313,
+      146340.8725490196,
+      145789.6796116505,
+      149067.5294117647,
+      161898.57843137256,
+      180056.20588235295,
+      189171.568627451,
+      197337.77450980392,
+      227485.20588235295,
+      289913.5436893204
+    ]
+  },
+  "2ndFlrSF": {
+    "name": "2ndFlrSF",
+    "description": "Second floor square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 2065.0,
+    "mean": 353.73874755381604,
+    "std": 441.1249634121205,
+    "skewness": 0.8123922827013292,
+    "kurtosis": -0.5126534818509358,
+    "outlier_ratio_3sigma": 0.0029354207436399216,
+    "num_modes_estimated": 1,
+    "target_bin_avg": [
+      169492.13539967375,
+      147042.92783505155,
+      171949.20560747664,
+      203624.79411764705,
+      271567.33009708737
+    ]
+  },
+  "LowQualFinSF": {
+    "name": "LowQualFinSF",
+    "description": "Low quality finished square feet (all floors)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 572.0,
+    "mean": 5.76614481409002,
+    "std": 47.9495644736539,
+    "skewness": 9.100801352190967,
+    "kurtosis": 85.13922615262688,
+    "outlier_ratio_3sigma": 0.012720156555772993,
+    "num_modes_estimated": 7,
+    "target_bin_avg": [
+      181312.6927592955
+    ]
+  },
+  "GrLivArea": {
+    "name": "GrLivArea",
+    "description": "Above grade (ground) living area square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 334.0,
+    "max": 5642.0,
+    "mean": 1529.242661448141,
+    "std": 530.97180491072,
+    "skewness": 1.4853638535459577,
+    "kurtosis": 5.8602825665620415,
+    "outlier_ratio_3sigma": 0.012720156555772993,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      108819.41747572816,
+      125535.63725490196,
+      137448.53465346535,
+      150048.55339805825,
+      163344.98039215687,
+      191650.3137254902,
+      199961.0588235294,
+      208188.5980392157,
+      238770.91176470587,
+      288891.41747572814
+    ]
+  },
+  "BsmtFullBath": {
+    "name": "BsmtFullBath",
+    "description": "Basement full bathrooms",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 3.0,
+    "mean": 0.4227005870841487,
+    "std": 0.5193544421787691,
+    "skewness": 0.6275813806676205,
+    "kurtosis": -0.6977538666976733,
+    "outlier_ratio_3sigma": 0.010763209393346379,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      166736.39202657808,
+      202205.39047619049
+    ]
+  },
+  "BsmtHalfBath": {
+    "name": "BsmtHalfBath",
+    "description": "Basement half bathrooms",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 2.0,
+    "mean": 0.05968688845401174,
+    "std": 0.24111863812982212,
+    "skewness": 3.9310795632919593,
+    "kurtosis": 14.570579632674361,
+    "outlier_ratio_3sigma": 0.05870841487279843,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      181312.6927592955
+    ]
+  },
+  "FullBath": {
+    "name": "FullBath",
+    "description": "Full bathrooms above grade",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 3.0,
+    "mean": 1.582191780821918,
+    "std": 0.544400658337402,
+    "skewness": 0.053645146382704845,
+    "kurtosis": -0.9487985710657862,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      235333.33333333334,
+      135433.66516853933,
+      216598.59059233448
+    ]
+  },
+  "HalfBath": {
+    "name": "HalfBath",
+    "description": "Half baths above grade",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 2.0,
+    "mean": 0.3747553816046967,
+    "std": 0.49430516815113495,
+    "skewness": 0.6397998541506026,
+    "kurtosis": -1.2828196046642968,
+    "outlier_ratio_3sigma": 0.004892367906066536,
+    "num_modes_estimated": 1,
+    "target_bin_avg": [
+      164248.32919254657,
+      210385.31216931218
+    ]
+  },
+  "Bedroom": {
+    "name": "Bedroom",
+    "description": "Bedrooms above grade (does NOT include basement bedrooms)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 8.0,
+    "mean": 2.8904109589041096,
+    "std": 0.8111164645698171,
+    "skewness": 0.25779922410232203,
+    "kurtosis": 2.37394279513948,
+    "outlier_ratio_3sigma": 0.007827788649706457,
+    "num_modes_estimated": 6,
+    "target_bin_avg": [
+      194928.22222222222,
+      156463.16734693878,
+      180885.59033989266,
+      213382.6098901099
+    ]
+  },
+  "Kitchen": {
+    "name": "Kitchen",
+    "description": "Kitchens above grade",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 2.0,
+    "mean": 1.0450097847358122,
+    "std": 0.21209636413869687,
+    "skewness": 4.083853979457613,
+    "kurtosis": 16.605824604008824,
+    "outlier_ratio_3sigma": 0.046966731898238745,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      127500.0,
+      181365.3986287953
+    ]
+  },
+  "KitchenQual": {
+    "name": "KitchenQual",
+    "description": "Kitchen quality",
+    "type": "categorical",
+    "values": [
+      "TA",
+      "Gd",
+      "Ex",
+      "Fa"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      512,
+      415,
+      65,
+      30
+    ],
+    "target_bin_avg": null
+  },
+  "TotRmsAbvGrd": {
+    "name": "TotRmsAbvGrd",
+    "description": "Total rooms above grade (does not include bathrooms)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 2.0,
+    "max": 14.0,
+    "mean": 6.545009784735812,
+    "std": 1.6302207027182418,
+    "skewness": 0.6820222905928764,
+    "kurtosis": 0.9547230729668503,
+    "outlier_ratio_3sigma": 0.008806262230919765,
+    "num_modes_estimated": 4,
+    "target_bin_avg": [
+      124693.60759493671,
+      140741.92934782608,
+      163018.97894736842,
+      195191.97863247863,
+      215159.61240310076,
+      267237.2972972973
+    ]
+  },
+  "Functional": {
+    "name": "Functional",
+    "description": "Home functionality (Assume typical unless deductions are warranted)",
+    "type": "categorical",
+    "values": [
+      "Typ",
+      "Min2",
+      "Min1",
+      "Mod",
+      "Maj1",
+      "Maj2",
+      "Sev"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 7,
+    "value_frequencies": [
+      946,
+      25,
+      24,
+      13,
+      9,
+      4,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "Fireplaces": {
+    "name": "Fireplaces",
+    "description": "Number of fireplaces",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 3.0,
+    "mean": 0.6135029354207436,
+    "std": 0.6507237434541625,
+    "skewness": 0.6527981557729572,
+    "kurtosis": -0.2940931906745603,
+    "outlier_ratio_3sigma": 0.0029354207436399216,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      142580.82751540042,
+      216569.54953271028
+    ]
+  },
+  "FireplaceQu": {
+    "name": "FireplaceQu",
+    "description": "Fireplace quality",
+    "type": "categorical",
+    "values": [
+      "nan",
+      "Gd",
+      "TA",
+      "Fa",
+      "Ex",
+      "Po"
+    ],
+    "missing_ratio": 0.4765166340508806,
+    "n_unique": 5,
+    "value_frequencies": [
+      487,
+      261,
+      219,
+      23,
+      18,
+      14
+    ],
+    "target_bin_avg": null
+  },
+  "GarageType": {
+    "name": "GarageType",
+    "description": "Garage location",
+    "type": "categorical",
+    "values": [
+      "Attchd",
+      "Detchd",
+      "BuiltIn",
+      "nan",
+      "Basment",
+      "CarPort",
+      "2Types"
+    ],
+    "missing_ratio": 0.05283757338551859,
+    "n_unique": 6,
+    "value_frequencies": [
+      604,
+      275,
+      64,
+      54,
+      14,
+      7,
+      4
+    ],
+    "target_bin_avg": null
+  },
+  "GarageYrBlt": {
+    "name": "GarageYrBlt",
+    "description": "Year garage was built",
+    "type": "numerical",
+    "missing_ratio": 0.05283757338551859,
+    "min": 1900.0,
+    "max": 2010.0,
+    "mean": 1978.676652892562,
+    "std": 24.814634245870536,
+    "skewness": -0.6721887545336959,
+    "kurtosis": -0.3773901829489352,
+    "outlier_ratio_3sigma": 0.0010330578512396695,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      145448.3085106383,
+      134252.98823529412,
+      147729.12621359224,
+      156828.40384615384,
+      156393.28260869565,
+      187483.13725490196,
+      221917.63157894736,
+      216464.5641025641,
+      212309.32941176472,
+      268251.58181818185
+    ]
+  },
+  "GarageFinish": {
+    "name": "GarageFinish",
+    "description": "Interior finish of the garage",
+    "type": "categorical",
+    "values": [
+      "Unf",
+      "RFn",
+      "Fin",
+      "nan"
+    ],
+    "missing_ratio": 0.05283757338551859,
+    "n_unique": 3,
+    "value_frequencies": [
+      424,
+      292,
+      252,
+      54
+    ],
+    "target_bin_avg": null
+  },
+  "GarageCars": {
+    "name": "GarageCars",
+    "description": "Size of garage in car capacity",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 4.0,
+    "mean": 1.783757338551859,
+    "std": 0.7307506048198822,
+    "skewness": -0.4400353042867458,
+    "kurtosis": 0.26116900379953156,
+    "outlier_ratio_3sigma": 0.0009784735812133072,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      100632.4074074074,
+      128157.9918032787,
+      184471.27104377103,
+      300161.05384615384
+    ]
+  },
+  "GarageArea": {
+    "name": "GarageArea",
+    "description": "Size of garage in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 1418.0,
+    "mean": 477.12035225048925,
+    "std": 208.44329550365558,
+    "skewness": 0.07185763541587545,
+    "kurtosis": 0.7986260439416522,
+    "outlier_ratio_3sigma": 0.0029354207436399216,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      111424.8953488372,
+      125098.33913043479,
+      143897.47619047618,
+      167586.075,
+      170558.59016393442,
+      185662.66346153847,
+      190581.8712871287,
+      189350.74038461538,
+      235109.74509803922,
+      289098.01941747573
+    ]
+  },
+  "GarageQual": {
+    "name": "GarageQual",
+    "description": "Garage quality",
+    "type": "categorical",
+    "values": [
+      "TA",
+      "nan",
+      "Fa",
+      "Gd",
+      "Ex",
+      "Po"
+    ],
+    "missing_ratio": 0.05283757338551859,
+    "n_unique": 5,
+    "value_frequencies": [
+      920,
+      54,
+      32,
+      12,
+      3,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "GarageCond": {
+    "name": "GarageCond",
+    "description": "Garage condition",
+    "type": "categorical",
+    "values": [
+      "TA",
+      "nan",
+      "Fa",
+      "Gd",
+      "Po",
+      "Ex"
+    ],
+    "missing_ratio": 0.05283757338551859,
+    "n_unique": 5,
+    "value_frequencies": [
+      929,
+      54,
+      26,
+      8,
+      3,
+      2
+    ],
+    "target_bin_avg": null
+  },
+  "PavedDrive": {
+    "name": "PavedDrive",
+    "description": "Paved driveway",
+    "type": "categorical",
+    "values": [
+      "Y",
+      "N",
+      "P"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      936,
+      64,
+      22
+    ],
+    "target_bin_avg": null
+  },
+  "WoodDeckSF": {
+    "name": "WoodDeckSF",
+    "description": "Wood deck area in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 857.0,
+    "mean": 97.54892367906066,
+    "std": 131.69187263508408,
+    "skewness": 1.5911355253323392,
+    "kurtosis": 3.1384543737563613,
+    "outlier_ratio_3sigma": 0.015655577299412915,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      158857.82218597064,
+      204363.0980392157,
+      216862.38235294117,
+      219195.39603960395,
+      219403.77884615384
+    ]
+  },
+  "OpenPorchSF": {
+    "name": "OpenPorchSF",
+    "description": "Open porch area in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 547.0,
+    "mean": 49.525440313111545,
+    "std": 69.2059683226163,
+    "skewness": 2.2923992100543855,
+    "kurtosis": 7.7565394609724585,
+    "outlier_ratio_3sigma": 0.02054794520547945,
+    "num_modes_estimated": 4,
+    "target_bin_avg": [
+      148966.47826086957,
+      191835.0693069307,
+      212154.6224489796,
+      232388.24107142858,
+      216049.67647058822,
+      210616.39805825244
+    ]
+  },
+  "EnclosedPorch": {
+    "name": "EnclosedPorch",
+    "description": "Enclosed porch area in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 552.0,
+    "mean": 21.303326810176124,
+    "std": 61.53437974805874,
+    "skewness": 3.2798178911096088,
+    "kurtosis": 12.189084384952338,
+    "outlier_ratio_3sigma": 0.036203522504892366,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      185439.27808069793,
+      145273.84761904762
+    ]
+  },
+  "3SsnPorch": {
+    "name": "3SsnPorch",
+    "description": "Three season porch area in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 508.0,
+    "mean": 3.8816046966731896,
+    "std": 32.54772242766764,
+    "skewness": 9.857926610284487,
+    "kurtosis": 110.6617968183254,
+    "outlier_ratio_3sigma": 0.016634050880626222,
+    "num_modes_estimated": 6,
+    "target_bin_avg": [
+      181312.6927592955
+    ]
+  },
+  "ScreenPorch": {
+    "name": "ScreenPorch",
+    "description": "Screen porch area in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 480.0,
+    "mean": 15.565557729941291,
+    "std": 56.445748594641685,
+    "skewness": 4.141934891692824,
+    "kurtosis": 19.130567943554958,
+    "outlier_ratio_3sigma": 0.03522504892367906,
+    "num_modes_estimated": 5,
+    "target_bin_avg": [
+      181312.6927592955
+    ]
+  },
+  "PoolArea": {
+    "name": "PoolArea",
+    "description": "Pool area in square feet",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 738.0,
+    "mean": 2.7436399217221137,
+    "std": 39.671531295842286,
+    "skewness": 14.841596176992699,
+    "kurtosis": 225.87262020345776,
+    "outlier_ratio_3sigma": 0.004892367906066536,
+    "num_modes_estimated": 3,
+    "target_bin_avg": [
+      181312.6927592955
+    ]
+  },
+  "PoolQC": {
+    "name": "PoolQC",
+    "description": "Pool quality",
+    "type": "categorical",
+    "values": [
+      "nan",
+      "Ex",
+      "Gd",
+      "Fa"
+    ],
+    "missing_ratio": 0.9951076320939335,
+    "n_unique": 3,
+    "value_frequencies": [
+      1017,
+      2,
+      2,
+      1
+    ]
+  },
+  "Fence": {
+    "name": "Fence",
+    "description": "Fence quality",
+    "type": "categorical",
+    "values": [
+      "nan",
+      "MnPrv",
+      "GdPrv",
+      "GdWo",
+      "MnWw"
+    ],
+    "missing_ratio": 0.8023483365949119,
+    "n_unique": 4,
+    "value_frequencies": [
+      820,
+      112,
+      41,
+      41,
+      8
+    ],
+    "target_bin_avg": null
+  },
+  "MiscFeature": {
+    "name": "MiscFeature",
+    "description": "Miscellaneous feature not covered in other categories",
+    "type": "categorical",
+    "values": [
+      "nan",
+      "Shed",
+      "Othr",
+      "Gar2",
+      "TenC"
+    ],
+    "missing_ratio": 0.9608610567514677,
+    "n_unique": 4,
+    "value_frequencies": [
+      982,
+      37,
+      1,
+      1,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "MiscVal": {
+    "name": "MiscVal",
+    "description": "$Value of miscellaneous feature",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 8300.0,
+    "mean": 41.56555772994129,
+    "std": 338.13235837501105,
+    "skewness": 16.792814627969197,
+    "kurtosis": 366.48574400124653,
+    "outlier_ratio_3sigma": 0.011741682974559686,
+    "num_modes_estimated": 5,
+    "target_bin_avg": [
+      181312.6927592955
+    ]
+  },
+  "MoSold": {
+    "name": "MoSold",
+    "description": "Month Sold (MM)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 1.0,
+    "max": 12.0,
+    "mean": 6.363992172211351,
+    "std": 2.6501150182821798,
+    "skewness": 0.26693392416072537,
+    "kurtosis": -0.3858966867562956,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      178207.9193548387,
+      179719.55,
+      173696.13684210528,
+      176997.27848101265,
+      177882.48876404495,
+      186028.8230452675,
+      194204.44444444444,
+      185100.16770186336
+    ]
+  },
+  "YrSold": {
+    "name": "YrSold",
+    "description": "Year Sold (YYYY)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 2006.0,
+    "max": 2010.0,
+    "mean": 2007.8140900195694,
+    "std": 1.3258069461614355,
+    "skewness": 0.0890674861278993,
+    "kurtosis": -1.189430989982804,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 5,
+    "target_bin_avg": [
+      178974.36651583712,
+      188846.81938325992,
+      179278.28837209303,
+      179206.62116991644
+    ]
+  },
+  "SaleType": {
+    "name": "SaleType",
+    "description": "Type of sale",
+    "type": "categorical",
+    "values": [
+      "WD",
+      "New",
+      "COD",
+      "ConLD",
+      "CWD",
+      "ConLw",
+      "Con",
+      "Oth",
+      "ConLI"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 9,
+    "value_frequencies": [
+      893,
+      84,
+      27,
+      7,
+      4,
+      3,
+      2,
+      1,
+      1
+    ],
+    "target_bin_avg": null
+  },
+  "SaleCondition": {
+    "name": "SaleCondition",
+    "description": "Condition of sale",
+    "type": "categorical",
+    "values": [
+      "Normal",
+      "Partial",
+      "Abnorml",
+      "Family",
+      "Alloca",
+      "AdjLand"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 6,
+    "value_frequencies": [
+      843,
+      85,
+      68,
+      17,
+      5,
+      4
+    ],
+    "target_bin_avg": null
+  }
+}

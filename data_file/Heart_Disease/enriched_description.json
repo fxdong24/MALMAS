@@ -1,0 +1,170 @@
+{
+  "Age": {
+    "description": "Age of the patient",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 29.0,
+    "max": 75.0,
+    "mean": 53.265454545454546,
+    "std": 9.379010363743738,
+    "skewness": -0.2274811299160304,
+    "kurtosis": -0.5047993433244122,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 1,
+    "target_bin_avg": null
+  },
+  "Sex": {
+    "description": "Sex of the patient",
+    "type": "categorical",
+    "values": [
+      "M",
+      "F"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      434,
+      116
+    ],
+    "target_bin_avg": null
+  },
+  "ChestPainType": {
+    "description": "Type of chest pain experienced by the patient",
+    "type": "categorical",
+    "values": [
+      "ASY",
+      "NAP",
+      "ATA",
+      "TA"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "value_frequencies": [
+      292,
+      128,
+      101,
+      29
+    ],
+    "target_bin_avg": null
+  },
+  "RestingBP": {
+    "description": "Resting blood pressure in mm Hg",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 94.0,
+    "max": 200.0,
+    "mean": 131.72,
+    "std": 17.298771764311304,
+    "skewness": 0.5742780199182413,
+    "kurtosis": 0.5751591234952174,
+    "outlier_ratio_3sigma": 0.005454545454545455,
+    "num_modes_estimated": 1,
+    "target_bin_avg": null
+  },
+  "Cholesterol": {
+    "description": "Serum cholesterol in mg/dl",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 0.0,
+    "max": 603.0,
+    "mean": 198.79272727272726,
+    "std": 108.13312623292387,
+    "skewness": -0.643462243025211,
+    "kurtosis": 0.15586827184700613,
+    "outlier_ratio_3sigma": 0.0036363636363636364,
+    "num_modes_estimated": 2,
+    "target_bin_avg": null
+  },
+  "FastingBS": {
+    "description": "Fasting blood sugar (1 if > 120 mg/dl, else 0)",
+    "type": "categorical",
+    "values": [
+      "0.0",
+      "1.0"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      420,
+      130
+    ],
+    "target_bin_avg": null
+  },
+  "RestingECG": {
+    "description": "Resting electrocardiogram results",
+    "type": "categorical",
+    "values": [
+      "Normal",
+      "ST",
+      "LVH"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      337,
+      108,
+      105
+    ],
+    "target_bin_avg": null
+  },
+  "MaxHR": {
+    "description": "Maximum heart rate achieved",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": 63.0,
+    "max": 194.0,
+    "mean": 135.8490909090909,
+    "std": 25.90090667110252,
+    "skewness": -0.0625606234355234,
+    "kurtosis": -0.652024351053782,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 1,
+    "target_bin_avg": null
+  },
+  "ExerciseAngina": {
+    "description": "Exercise-induced angina (Y, N)",
+    "type": "categorical",
+    "values": [
+      "N",
+      "Y"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "value_frequencies": [
+      329,
+      221
+    ],
+    "target_bin_avg": null
+  },
+  "Oldpeak": {
+    "description": "ST depression induced by exercise relative to rest (oldpeak)",
+    "type": "numerical",
+    "missing_ratio": 0.0,
+    "min": -2.0,
+    "max": 5.6,
+    "mean": 0.8481818181818181,
+    "std": 1.0033034523609778,
+    "skewness": 0.9202890904829428,
+    "kurtosis": 0.5853731701251657,
+    "outlier_ratio_3sigma": 0.007272727272727273,
+    "num_modes_estimated": 3,
+    "target_bin_avg": null
+  },
+  "ST_Slope": {
+    "description": "The slope of the peak exercise ST segment",
+    "type": "categorical",
+    "values": [
+      "Flat",
+      "Up",
+      "Down"
+    ],
+    "missing_ratio": 0.0,
+    "n_unique": 3,
+    "value_frequencies": [
+      278,
+      238,
+      34
+    ],
+    "target_bin_avg": null
+  }
+}

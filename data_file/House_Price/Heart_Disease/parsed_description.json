@@ -1,0 +1,54 @@
+{
+  "age": {
+    "description": "Age of the patient in years",
+    "type": "numerical"
+  },
+  "sex": {
+    "description": "Gender of the patient (0 = male, 1 = female)",
+    "type": "categorical"
+  },
+  "cp": {
+    "description": "Chest pain type (0: Typical angina, 1: Atypical angina, 2: Non-anginal pain, 3: Asymptomatic)",
+    "type": "categorical"
+  },
+  "trestbps": {
+    "description": "Resting blood pressure in mm Hg",
+    "type": "numerical"
+  },
+  "chol": {
+    "description": "Serum cholesterol in mg/dl",
+    "type": "numerical"
+  },
+  "fbs": {
+    "description": "Fasting blood sugar > 120 mg/dl (1 = true, 0 = false)",
+    "type": "categorical"
+  },
+  "restecg": {
+    "description": "Resting electrocardiographic results (0: Normal, 1: ST-T abnormality, 2: Left ventricular hypertrophy)",
+    "type": "categorical"
+  },
+  "thalach": {
+    "description": "Maximum heart rate achieved during a stress test",
+    "type": "numerical"
+  },
+  "exang": {
+    "description": "Exercise-induced angina (1 = yes, 0 = no)",
+    "type": "categorical"
+  },
+  "oldpeak": {
+    "description": "ST depression induced by exercise relative to rest",
+    "type": "numerical"
+  },
+  "slope": {
+    "description": "Slope of the peak exercise ST segment (0: Upsloping, 1: Flat, 2: Downsloping)",
+    "type": "categorical"
+  },
+  "ca": {
+    "description": "Number of major vessels (0-4) colored by fluoroscopy",
+    "type": "numerical"
+  },
+  "thal": {
+    "description": "Thallium stress test result (0: Normal, 1: Fixed defect, 2: Reversible defect, 3: Not described)",
+    "type": "categorical"
+  }
+}

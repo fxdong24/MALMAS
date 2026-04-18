@@ -1,0 +1,1 @@
+Estimate the individual medical cost of this patient billed by health insurance

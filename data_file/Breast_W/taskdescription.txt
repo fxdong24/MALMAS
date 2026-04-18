@@ -1,0 +1,1 @@
+Indicate whether the breast mass is malignant (M) or benign (B)

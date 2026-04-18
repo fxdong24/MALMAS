@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALMAS - Upload & Run</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .upload-area {
+            border: 3px dashed #ddd;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .upload-area:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+
+        .upload-area.dragover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .log-container {
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            height: 300px;
+            overflow-y: auto;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+            color: #d4d4d4;
+        }
+
+        .log-line {
+            padding: 4px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .log-line:last-child {
+            border-bottom: none;
+        }
+
+        .log-error {
+            color: #f48771;
+        }
+
+        .log-success {
+            color: #89d185;
+        }
+
+        .file-info {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .file-info strong {
+            color: #667eea;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .status-idle {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        .status-running {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .result-table th, .result-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .result-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #2d2d2d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MALMAS</h1>
+        <p style="text-align: center; color: white; margin-bottom: 30px; font-size: 1.1rem;">
+            Memory-Augmented LLM-based Multi-Agent System for Automated Feature Generation
+        </p>
+
+        <div class="card">
+            <h2>1. Upload CSV File</h2>
+            <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+                <div class="upload-icon">📁</div>
+                <p>Click to upload or drag and drop</p>
+                <p style="color: #888; font-size: 0.9rem;">CSV files only</p>
+            </div>
+            <input type="file" id="fileInput" class="file-input" accept=".csv">
+            <div class="file-info" id="fileInfo" style="display: none;">
+                <p>📄 <strong id="fileName"></strong></p>
+                <p style="color: #666; margin-top: 8px;" id="fileDetails"></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>2. Configure Experiment</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="target_column">Target Column</label>
+                    <input type="text" id="target_column" placeholder="Column name to predict">
+                </div>
+                <div class="form-group">
+                    <label for="task">Task Type</label>
+                    <select id="task" onchange="updateMetrics()">
+                        <option value="classification">Classification</option>
+                        <option value="regression">Regression</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="model_name">Model</label>
+                    <select id="model_name">
+                        <option value="xgboost">XGBoost</option>
+                        <option value="lightgbm">LightGBM</option>
+                        <option value="catboost">CatBoost</option>
+                        <option value="random_forest">Random Forest</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="metric">Metric</label>
+                    <select id="metric">
+                        <option value="auc">AUC</option>
+                        <option value="acc">Accuracy</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Nround">Rounds</label>
+                    <input type="number" id="Nround" value="4" min="1" max="10">
+                </div>
+                <div class="form-group">
+                    <label for="temp">Temperature</label>
+                    <input type="number" id="temp" value="1.0" min="0" max="2" step="0.1">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>3. LLM Configuration</h2>
+            <div class="form-group">
+                <label for="llm_model">Model</label>
+                <select id="llm_model">
+                    <option value="deepseek-chat">DeepSeek Chat</option>
+                    <option value="qwen-max">Qwen Max</option>
+                    <option value="gpt-4o-mini">GPT-4o Mini</option>
+                    <option value="gpt-4o">GPT-4o</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="api_key">API Key</label>
+                <input type="password" id="api_key" placeholder="Enter your API key">
+            </div>
+            <div class="form-group">
+                <label for="base_url">Base URL (optional)</label>
+                <input type="text" id="base_url" placeholder="https://api.deepseek.com">
+            </div>
+        </div>
+
+        <button class="btn btn-primary" id="runBtn" onclick="runExperiment()">
+            🚀 Run MALMAS Experiment
+        </button>
+
+        <div class="card" id="resultsCard" style="display: none;">
+            <h2>Results</h2>
+            <span class="status status-running" id="statusBadge">Running...</span>
+            <div class="log-container" id="logContainer">
+                <div class="log-line">Waiting for experiment...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedFile = null;
+        let currentTaskId = null;
+        let eventSource = null;
+        let columns = [];
+
+        // File upload handling
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file && file.name.endsWith('.csv')) {
+                handleFile(file);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        });
+
+        function handleFile(file) {
+            selectedFile = file;
+            document.getElementById('fileName').textContent = file.name;
+
+            // Parse CSV to get columns
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const text = e.target.result;
+                const lines = text.split('\n');
+                if (lines.length > 0) {
+                    columns = lines[0].split(',').map(c => c.trim().replace(/"/g, ''));
+                    const numRows = lines.length - 1;
+                    document.getElementById('fileDetails').textContent =
+                        `${columns.length} columns, ${numRows} rows`;
+                    document.getElementById('target_column').placeholder =
+                        columns.length > 0 ? columns[columns.length - 1] + ' (auto-detected)' : 'Enter target column';
+                }
+            };
+            reader.readAsText(file);
+
+            document.getElementById('fileInfo').style.display = 'block';
+            uploadArea.innerHTML = `<div class="upload-icon">✅</div><p>File selected: ${file.name}</p><p style="color: #888; font-size: 0.9rem;">Click to change</p>`;
+        }
+
+        function updateMetrics() {
+            const task = document.getElementById('task').value;
+            const metric = document.getElementById('metric');
+            if (task === 'regression') {
+                metric.innerHTML = '<option value="nrmse">NRMSE</option>';
+            } else {
+                metric.innerHTML = '<option value="auc">AUC</option><option value="acc">Accuracy</option>';
+            }
+        }
+
+        function log(message, type = '') {
+            const container = document.getElementById('logContainer');
+            const line = document.createElement('div');
+            line.className = 'log-line' + (type ? ' log-' + type : '');
+            line.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            container.appendChild(line);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        async function runExperiment() {
+            if (!selectedFile) {
+                alert('Please upload a CSV file first');
+                return;
+            }
+
+            const apiKey = document.getElementById('api_key').value;
+            if (!apiKey) {
+                alert('Please enter your API key');
+                return;
+            }
+
+            document.getElementById('resultsCard').style.display = 'block';
+            document.getElementById('runBtn').disabled = true;
+            document.getElementById('logContainer').innerHTML = '';
+            log('Starting experiment...');
+
+            const formData = new FormData();
+            formData.append('file', selectedFile);
+            formData.append('target_column', document.getElementById('target_column').value);
+            formData.append('task', document.getElementById('task').value);
+            formData.append('model_name', document.getElementById('model_name').value);
+            formData.append('metric', document.getElementById('metric').value);
+            formData.append('Nround', parseInt(document.getElementById('Nround').value));
+            formData.append('temp', parseFloat(document.getElementById('temp').value));
+            formData.append('llm_model', document.getElementById('llm_model').value);
+            formData.append('api_key', apiKey);
+            formData.append('base_url', document.getElementById('base_url').value);
+            formData.append('router_strategy', 'hybrid');
+            formData.append('router_use_llm', 'false');
+
+            try {
+                const response = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.status === 'started') {
+                    currentTaskId = data.task_id;
+                    log(`Task started: ${data.task_id}`);
+                    log(`Target column: ${data.target_column}`);
+                    startLogStream(data.task_id);
+                } else {
+                    log('Error: ' + JSON.stringify(data), 'error');
+                    document.getElementById('runBtn').disabled = false;
+                }
+            } catch (error) {
+                log('Error: ' + error.message, 'error');
+                document.getElementById('runBtn').disabled = false;
+            }
+        }
+
+        function startLogStream(taskId) {
+            if (eventSource) {
+                eventSource.close();
+            }
+
+            eventSource = new EventSource(`/api/experiment/stream/${taskId}`);
+
+            eventSource.addEventListener('log', (e) => {
+                log(e.data);
+            });
+
+            eventSource.addEventListener('done', async (e) => {
+                log('Experiment completed!', 'success');
+                document.getElementById('statusBadge').textContent = 'Completed';
+                document.getElementById('statusBadge').className = 'status status-idle';
+                document.getElementById('runBtn').disabled = false;
+
+                // Fetch result
+                try {
+                    const res = await fetch(`/api/experiment/result/${taskId}`);
+                    const result = await res.json();
+                    if (result.result) {
+                        displayResults(result.result);
+                    }
+                } catch (err) {
+                    console.error('Failed to fetch result:', err);
+                }
+            });
+
+            eventSource.onerror = (e) => {
+                log('Connection error...', 'error');
+            };
+        }
+
+        function displayResults(result) {
+            const container = document.getElementById('logContainer');
+            const table = document.createElement('table');
+            table.className = 'result-table';
+
+            // Header
+            const header = table.createTHead();
+            const headerRow = header.insertRow();
+            for (const key of Object.keys(result[0])) {
+                const th = document.createElement('th');
+                th.textContent = key;
+                headerRow.appendChild(th);
+            }
+
+            // Body
+            const tbody = table.createTBody();
+            for (const row of result) {
+                const tr = tbody.insertRow();
+                for (const [key, value] of Object.entries(row)) {
+                    const td = tr.insertCell();
+                    td.textContent = typeof value === 'number' ? value.toFixed(4) : value;
+                }
+            }
+
+            container.appendChild(table);
+        }
+    </script>
+</body>
+</html>

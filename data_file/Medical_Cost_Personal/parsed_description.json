@@ -1,0 +1,26 @@
+{
+  "age": {
+    "description": "Age of primary beneficiary",
+    "type": "numerical"
+  },
+  "sex": {
+    "description": "Gender of the beneficiary (male or female)",
+    "type": "categorical"
+  },
+  "bmi": {
+    "description": "Body Mass Index",
+    "type": "numerical"
+  },
+  "children": {
+    "description": "Number of dependents covered by insurance",
+    "type": "numerical"
+  },
+  "smoker": {
+    "description": "Whether the person is a smoker (yes or no)",
+    "type": "categorical"
+  },
+  "region": {
+    "description": "Residential area in the US (e.g., northeast, southeast, etc.)",
+    "type": "categorical"
+  }
+}

@@ -1,0 +1,1 @@
+Predict wine quality scores (0 or 1) based on physicochemical properties of the wine. Generate new numerical features from the existing continuous variables to improve prediction performance. 

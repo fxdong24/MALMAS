@@ -1,0 +1,1 @@
+Predict the heating loads of buildings based on architectural and design parameters such as surface area, glazing, and orientation. This is a supervised regression task.

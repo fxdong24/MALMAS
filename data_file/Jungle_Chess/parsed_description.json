@@ -1,0 +1,26 @@
+{
+  "white_piece0_strength": {
+    "description": "Strength of the white piece ",
+    "type": "categorical"
+  },
+  "white_piece0_file": {
+    "description": "File (column) of the white piece on the chessboard ",
+    "type": "categorical"
+  },
+  "white_piece0_rank": {
+    "description": "Rank (row) of the white piece on the chessboard",
+    "type": "categorical"
+  },
+  "black_piece0_strength": {
+    "description": "Strength of the black piece",
+    "type": "categorical"
+  },
+  "black_piece0_file": {
+    "description": "File (column) of the black piece on the chessboard ",
+    "type": "categorical"
+  },
+  "black_piece0_rank": {
+    "description": "Rank (row) of the black piece on the chessboard",
+    "type": "categorical"
+  }
+}

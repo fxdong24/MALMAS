@@ -1,0 +1,78 @@
+{
+  "Hours_Studied": {
+    "description": "Number of hours spent studying per week",
+    "type": "numerical"
+  },
+  "Attendance": {
+    "description": "Percentage of classes attended",
+    "type": "numerical"
+  },
+  "Parental_Involvement": {
+    "description": "Level of parental involvement in the student's education (Low, Medium, High)",
+    "type": "categorical"
+  },
+  "Access_to_Resources": {
+    "description": "Availability of educational resources (Low, Medium, High)",
+    "type": "categorical"
+  },
+  "Extracurricular_Activities": {
+    "description": "Participation in extracurricular activities (1, 0)",
+    "type": "categorical"
+  },
+  "Sleep_Hours": {
+    "description": "Average number of hours of sleep per night",
+    "type": "numerical"
+  },
+  "Previous_Scores": {
+    "description": "Scores from previous exams",
+    "type": "numerical"
+  },
+  "Motivation_Level": {
+    "description": "Student's level of motivation (Low, Medium, High)",
+    "type": "categorical"
+  },
+  "Internet_Access": {
+    "description": "Availability of internet access (1, 0)",
+    "type": "categorical"
+  },
+  "Tutoring_Sessions": {
+    "description": "Number of tutoring sessions attended per month",
+    "type": "numerical"
+  },
+  "Family_Income": {
+    "description": "Family income level (Low, Medium, High)",
+    "type": "categorical"
+  },
+  "Teacher_Quality": {
+    "description": "Quality of the teachers (Low, Medium, High)",
+    "type": "categorical"
+  },
+  "School_Type": {
+    "description": "Type of school attended (Public, Private)",
+    "type": "categorical"
+  },
+  "Peer_Influence": {
+    "description": "Influence of peers on academic performance (Positive, Neutral, Negative)",
+    "type": "categorical"
+  },
+  "Physical_Activity": {
+    "description": "Average number of hours of physical activity per week",
+    "type": "numerical"
+  },
+  "Learning_Disabilities": {
+    "description": "Presence of learning disabilities (1, 0)",
+    "type": "categorical"
+  },
+  "Parental_Education_Level": {
+    "description": "Highest education level of parents (High School, College, Postgraduate)",
+    "type": "categorical"
+  },
+  "Distance_from_Home": {
+    "description": "Distance from home to school (Near, Moderate, Far)",
+    "type": "categorical"
+  },
+  "Gender": {
+    "description": "Gender of the student (Male, Female)",
+    "type": "categorical"
+  }
+}

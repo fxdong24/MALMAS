@@ -1,0 +1,126 @@
+{
+  "age": {
+    "description": "Age of primary beneficiary",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 18.0,
+    "max": 64.0,
+    "mean": 39.246882793017456,
+    "std": 13.80509582257183,
+    "missing_ratio": 0.0,
+    "skewness": 0.0770464316300985,
+    "kurtosis": -1.206733766719843,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      10726.188124211267,
+      9341.709095061728,
+      10065.993502972973,
+      10555.775883908047,
+      14168.2603505,
+      12771.714845641025,
+      15273.71550383721,
+      15772.870984571427,
+      17967.410782564104,
+      20977.927585360823
+    ]
+  },
+  "sex": {
+    "description": "Insurance contractor gender (female, male)",
+    "type": "categorical",
+    "missing_count": 0,
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "values": [
+      "female",
+      "male"
+    ],
+    "value_frequencies": [
+      403,
+      399
+    ],
+    "target_bin_avg": null
+  },
+  "bmi": {
+    "description": "Body mass index",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 16.815,
+    "max": 53.13,
+    "mean": 30.61655860349127,
+    "std": 6.211734465577508,
+    "missing_ratio": 0.0,
+    "skewness": 0.2530980907257091,
+    "kurtosis": -0.08486805883200343,
+    "outlier_ratio_3sigma": 0.0012468827930174563,
+    "num_modes_estimated": 1,
+    "target_bin_avg": [
+      8973.679252124999,
+      11019.299538589743,
+      11075.929927594936,
+      11898.80667060241,
+      10303.075632209877,
+      16111.577903636362,
+      14887.438053975902,
+      16950.966190625,
+      20675.578044,
+      17335.37377222222
+    ]
+  },
+  "children": {
+    "description": "Number of dependents covered by insurance",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 0.0,
+    "max": 5.0,
+    "mean": 1.071072319201995,
+    "std": 1.1945302294920772,
+    "missing_ratio": 0.0,
+    "skewness": 0.9817412378068959,
+    "kurtosis": 0.3619444573184767,
+    "outlier_ratio_3sigma": 0.014962593516209476,
+    "num_modes_estimated": 5,
+    "target_bin_avg": [
+      13223.920838851003,
+      12659.546352741118,
+      16680.009806285714,
+      14834.53053948276
+    ]
+  },
+  "smoker": {
+    "description": "Smoking status",
+    "type": "categorical",
+    "missing_count": 0,
+    "missing_ratio": 0.0,
+    "n_unique": 2,
+    "values": [
+      "no",
+      "yes"
+    ],
+    "value_frequencies": [
+      623,
+      179
+    ],
+    "target_bin_avg": null
+  },
+  "region": {
+    "description": "Residential area in the US (northeast, southeast, southwest, northwest)",
+    "type": "categorical",
+    "missing_count": 0,
+    "missing_ratio": 0.0,
+    "n_unique": 4,
+    "values": [
+      "southeast",
+      "northwest",
+      "northeast",
+      "southwest"
+    ],
+    "value_frequencies": [
+      233,
+      199,
+      192,
+      178
+    ],
+    "target_bin_avg": null
+  }
+}

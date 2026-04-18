@@ -1,0 +1,171 @@
+{
+  "X1": {
+    "description": "Relative Compactness",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 0.62,
+    "max": 0.98,
+    "mean": 0.7623043478260869,
+    "std": 0.10486174517892717,
+    "missing_ratio": 0.0,
+    "skewness": 0.5086627110481858,
+    "kurtosis": -0.7016109629392471,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      14.482432432432432,
+      16.686666666666667,
+      12.896875,
+      12.036285714285714,
+      11.84065,
+      24.914285714285715,
+      39.12027027027027,
+      26.105833333333333,
+      28.09684210526316,
+      29.823947368421052
+    ]
+  },
+  "X2": {
+    "description": "Surface Area",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 514.5,
+    "max": 808.5,
+    "mean": 673.0576086956522,
+    "std": 87.44050231585815,
+    "missing_ratio": 0.0,
+    "skewness": -0.14408741485240464,
+    "kurtosis": -1.0658995345417965,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      28.253714285714285,
+      31.16439024390244,
+      28.09684210526316,
+      26.105833333333333,
+      37.26037974683545,
+      12.065142857142856,
+      11.84065,
+      12.036285714285714,
+      12.896875,
+      15.56945205479452
+    ]
+  },
+  "X3": {
+    "description": "Wall Area",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 245.0,
+    "max": 416.5,
+    "mean": 319.6717391304348,
+    "std": 43.918557836739495,
+    "missing_ratio": 0.0,
+    "skewness": 0.5592910967439507,
+    "kurtosis": 0.1222287487990723,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 1,
+    "target_bin_avg": [
+      12.065142857142856,
+      11.84065,
+      22.94287037037037,
+      22.6928,
+      28.057123287671235,
+      25.72113924050633
+    ]
+  },
+  "X4": {
+    "description": "Roof Area",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 110.25,
+    "max": 220.5,
+    "mean": 176.6929347826087,
+    "std": 45.240625469740586,
+    "missing_ratio": 0.0,
+    "skewness": -0.16453616022428272,
+    "kurtosis": -1.7893205773250416,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 1,
+    "target_bin_avg": [
+      28.253714285714285,
+      33.42,
+      19.086947368421054
+    ]
+  },
+  "X5": {
+    "description": "Overall Height",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 3.5,
+    "max": 7.0,
+    "mean": 5.2423913043478265,
+    "std": 1.7518887221833832,
+    "missing_ratio": 0.0,
+    "skewness": 0.00872420867902511,
+    "kurtosis": -2.0086762910435083,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 0,
+    "target_bin_avg": [
+      22.3706
+    ]
+  },
+  "X6": {
+    "description": "Orientation",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 2.0,
+    "max": 5.0,
+    "mean": 3.5456521739130435,
+    "std": 1.1085342383618721,
+    "missing_ratio": 0.0,
+    "skewness": -0.033801654672180714,
+    "kurtosis": -1.337929849297633,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 4,
+    "target_bin_avg": [
+      22.416826923076922,
+      21.856639344262298,
+      22.618017094017095
+    ]
+  },
+  "X7": {
+    "description": "Glazing Area",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 0.0,
+    "max": 0.4,
+    "mean": 0.2376086956521739,
+    "std": 0.1354357895213163,
+    "missing_ratio": 0.0,
+    "skewness": -0.10075860478249896,
+    "kurtosis": -1.3626304111305376,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 2,
+    "target_bin_avg": [
+      13.465866666666667,
+      20.39950354609929,
+      24.256643598615916
+    ]
+  },
+  "X8": {
+    "description": "Glazing Area Distribution",
+    "type": "numerical",
+    "missing_count": 0,
+    "min": 0.0,
+    "max": 5.0,
+    "mean": 2.7978260869565217,
+    "std": 1.5871198795844057,
+    "missing_ratio": 0.0,
+    "skewness": -0.059078733446320426,
+    "kurtosis": -1.2123528181568968,
+    "outlier_ratio_3sigma": 0.0,
+    "num_modes_estimated": 5,
+    "target_bin_avg": [
+      13.465866666666667,
+      23.369354838709675,
+      23.276341463414635,
+      22.483855421686748,
+      22.897267441860464
+    ]
+  }
+}

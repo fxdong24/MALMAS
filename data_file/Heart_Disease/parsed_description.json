@@ -1,0 +1,46 @@
+{
+  "Age": {
+    "description": "Age of the patient",
+    "type": "numerical"
+  },
+  "Sex": {
+    "description": "Sex of the patient",
+    "type": "categorical"
+  },
+  "ChestPainType": {
+    "description": "Type of chest pain experienced by the patient",
+    "type": "categorical"
+  },
+  "RestingBP": {
+    "description": "Resting blood pressure in mm Hg",
+    "type": "numerical"
+  },
+  "Cholesterol": {
+    "description": "Serum cholesterol in mg/dl",
+    "type": "numerical"
+  },
+  "FastingBS": {
+    "description": "Fasting blood sugar (1 if > 120 mg/dl, else 0)",
+    "type": "categorical"
+  },
+  "RestingECG": {
+    "description": "Resting electrocardiogram results",
+    "type": "categorical"
+  },
+  "MaxHR": {
+    "description": "Maximum heart rate achieved",
+    "type": "numerical"
+  },
+  "ExerciseAngina": {
+    "description": "Exercise-induced angina (Y, N)",
+    "type": "categorical"
+  },
+  "Oldpeak": {
+    "description": "ST depression induced by exercise relative to rest (oldpeak)",
+    "type": "numerical"
+  },
+  "ST_Slope": {
+    "description": "The slope of the peak exercise ST segment",
+    "type": "categorical"
+  }
+}
